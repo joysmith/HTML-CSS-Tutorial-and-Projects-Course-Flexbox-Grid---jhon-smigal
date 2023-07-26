@@ -3,6 +3,7 @@ CALC ()
 PERFORM MATH OPERATIONS + - * /
 MIX AND MATCH VALUES
 */
+
 * {
   margin: 0;
 }
@@ -14,5 +15,6 @@ MIX AND MATCH VALUES
 }
 .banner {
   background: red;
+  /* how to calculate banner height, we dont need to scroll down and both i.e navbar & banner cover actual screen size */
   height: calc(100vh - 6rem);
 }

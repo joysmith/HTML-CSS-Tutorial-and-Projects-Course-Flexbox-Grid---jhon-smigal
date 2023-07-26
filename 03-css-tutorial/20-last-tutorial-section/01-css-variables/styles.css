@@ -1,13 +1,20 @@
 /* 
 CSS VARIABLES AKA CUSTOM PROPERTIES
-allow to store value in one place and re-use it later
+
+allow to store value in one place and re-use it later 
+How to declare css variable
 --varName:value
+
+How to access css variable value
 property:var(--varName);
+
 scope
-:root{} === global
-element === local
+:root{} === global variable
+element === local variable
 any property
 */
+
+/* Here the root is our html document */
 :root {
   --primaryColor: #2539f1;
   --cl-secondary: green;
@@ -28,9 +35,12 @@ p {
   letter-spacing: var(--mainSpacing);
   transition: var(--mainTransition);
 }
+
 h3:hover {
   color: var(--cl-secondary);
 }
+
+/* how to define local variable */
 div {
   --primaryRed: red;
 }

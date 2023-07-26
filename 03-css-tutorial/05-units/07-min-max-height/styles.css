@@ -22,6 +22,9 @@ height:auto;min-height;max-height;overflow
   background: green;
   width: 10rem;
   height: 25rem;
+
+  /* How to hide content i.e text if it overflow from container */
   overflow: hidden;
+  /* How to make content in div scrollable */
   overflow: scroll;
 }
