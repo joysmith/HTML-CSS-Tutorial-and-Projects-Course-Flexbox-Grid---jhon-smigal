@@ -14,14 +14,20 @@ descendant selectors
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+/* descendant selector */
 ul li {
+  /* how to remove bullet point from list */
   list-style-type: none;
 }
+
 ul li a {
   color: #f15025;
   text-decoration: none;
   letter-spacing: 2px;
   background: #222;
+
+  /* set display to block because browser dont respect width, padding, margine of inline element */
   display: block;
   padding: 5px;
 }

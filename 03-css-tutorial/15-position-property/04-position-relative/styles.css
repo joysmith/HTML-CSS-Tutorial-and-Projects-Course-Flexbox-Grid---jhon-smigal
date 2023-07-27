@@ -1,7 +1,7 @@
 /* 
 position:static - default, always positioned according to the normal flow,
 position:relative - position relative to it's normal position.
-top,bottom,left, right
+top⬇️, bottom⬆️, left➡️, right⬅️ from container
 */
 div {
   border: 3px solid red;
@@ -11,6 +11,8 @@ div {
 .one {
   background: blue;
   color: white;
+
+  /* How to set relative position */
   position: relative;
   /* top: 200px; */
   bottom: 2rem;
