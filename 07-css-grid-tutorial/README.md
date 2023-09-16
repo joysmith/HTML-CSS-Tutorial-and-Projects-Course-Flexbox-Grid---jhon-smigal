@@ -201,7 +201,7 @@ body {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/03-color-values.png" width="900">
+<img src="notes/02-implicit-grid.png" width="900">
 
 ---
 
