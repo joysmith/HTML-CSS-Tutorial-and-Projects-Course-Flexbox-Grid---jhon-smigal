@@ -5,12 +5,16 @@ body {
 .container {
   border: 5px solid red;
 }
+
+/*1. General style setup for all box */
 .box {
   padding: 30px;
   text-align: center;
   font-size: 35px;
   color: #f3f3f3;
 }
+
+/*2. specific style setup for every single box  */
 .box-1 {
   background: #581f18;
 }

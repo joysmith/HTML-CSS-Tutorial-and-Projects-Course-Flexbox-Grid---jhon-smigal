@@ -16,14 +16,20 @@
         grid-template-rows: 100px 100px 100px;
         grid-gap: 1rem;
       }
+
+      /* How to use grid line like python UI module */
+      /* create: calculator. keyboard, matrix, window 8 Start, any layout */
       .cell-1 {
         /* grid-column-start: 1;
         grid-column-end: 3; */
         /* grid-row-start: 1;
         grid-row-end: 3; */
+
+        /* shorthand: where cell start and where cell end*/
         grid-column: 1/3;
         grid-row: 1/3;
       }
+
       .cell-4 {
         grid-column: 1/-1;
       }
