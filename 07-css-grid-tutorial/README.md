@@ -117,7 +117,7 @@ body {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/02-implicit-grid.png" width="700">
+<img src="notes/02-implicit-grid.png" width="900">
 
 ---
 
@@ -201,7 +201,7 @@ body {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/03-color-values.png" width="500">
+<img src="notes/03-color-values.png" width="900">
 
 ---
 
@@ -290,7 +290,7 @@ body {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/04-units-auto.png" width="500">
+<img src="notes/04-units-auto.png" width="900">
 
 ---
 
@@ -377,7 +377,7 @@ body {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/05-grid-rows.png" width="500">
+<img src="notes/05-grid-rows.png" width="900">
 
 ---
 
@@ -465,7 +465,7 @@ body {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.png" width="500">
+<img src="notes/app.png" width="900">
 
 ---
 
@@ -558,7 +558,7 @@ body {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/06-fr-unit.png" width="500">
+<img src="notes/06-fr-unit.png" width="900">
 
 ---
 
@@ -649,7 +649,7 @@ body {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/07-gap.png" width="500">
+<img src="notes/07-gap.png" width="900">
 
 ---
 
@@ -747,7 +747,7 @@ body {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/08-gap-new-syntax.png" width="500">
+<img src="notes/08-gap-new-syntax.png" width="900">
 
 ---
 
@@ -846,7 +846,7 @@ body {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/09-fr-vs.png" width="500">
+<img src="notes/09-fr-vs.png" width="900">
 
 ---
 
@@ -938,7 +938,7 @@ body {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.png" width="500">
+<img src="notes/app.png" width="900">
 
 ---
 
@@ -962,7 +962,7 @@ body {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/10-grid-lines.png" width="500">
+<img src="notes/10-grid-lines.png" width="900">
 
 ---
 
@@ -1070,7 +1070,7 @@ body {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/11-naming-grid-lines.png" width="500">
+<img src="notes/11-naming-grid-lines.png" width="900">
 
 ---
 
@@ -1165,7 +1165,7 @@ body {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/12-grid-template-areas.png" width="500">
+<img src="notes/12-grid-template-areas.png" width="900">
 
 ---
 
@@ -1335,7 +1335,7 @@ body {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/13-order-property.png" width="500">
+<img src="notes/13-order-property.png" width="900">
 
 ---
 
@@ -1359,7 +1359,7 @@ body {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/14-repeat-function.png" width="500">
+<img src="notes/14-repeat-function.png" width="900">
 
 ---
 
@@ -1518,7 +1518,7 @@ body {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.png" width="500">
+<img src="notes/app.png" width="900">
 
 ---
 
@@ -1542,7 +1542,7 @@ body {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.png" width="500">
+<img src="notes/app.png" width="900">
 
 ---
 
@@ -1566,7 +1566,7 @@ body {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/16-item-content.png" width="500">
+<img src="notes/16-item-content.png" width="900">
 
 ---
 
@@ -1590,7 +1590,7 @@ body {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/17-minmax.png" width="500">
+<img src="notes/17-minmax.png" width="900">
 
 ---
 
@@ -1736,7 +1736,7 @@ body {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/18-auto-fit-auto-fill.png" width="500">
+<img src="notes/18-auto-fit-auto-fill.png" width="900">
 
 ---
 
