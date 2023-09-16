@@ -52,7 +52,7 @@
 
 > **_Business Objective: Layout_**
 
-<img src="notes/setup.png" width="500">
+<img src="notes/setup.png" width="700">
 
 ---
 
