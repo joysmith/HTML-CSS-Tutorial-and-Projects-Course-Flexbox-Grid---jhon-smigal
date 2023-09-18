@@ -1,46 +1,16 @@
-#### 302. [CSS Grid - Intro](#302)
-
-#### 303. [Setup](#303)
-
-#### 304. [Basic Syntax - grid-template-columns](#304)
-
-#### 305. [Implicit Grid](#305)
-
-#### 306. [General CSS Setup](#306)
-
-#### 307. [Units - auto](#307)
-
-#### 308. [grid-template-rows](#308)
-
-#### 309. [fr units](#309)
-
-#### 310. [gap property](#310)
-
-#### 311. [Gap - New Syntax!](#311)
-
-#### 312. [fr vs %](#312)
-
-#### 313. [Firefox Developer Tools](#313)
-
-#### 314. [grid-lines](#314)
-
-#### 315. [Naming Grid Lines](#315)
-
-#### 316. [Grid Template Areas](#316)
-
-#### 317. [Order Property](#317)
-
-#### 318. [Repeat Function](#318)
-
-#### 319. [justify-content](#319)
-
-#### 320. [align-content](#320)
-
-#### 321. [align-items, jusitfy-items, align-self,justify-self](#321)
-
-#### 322. [minmax()](#322)
-
-#### 323. [auto-fit and auto-fill](#323)
+| Index                                             | Index                                                            |
+| ------------------------------------------------- | ---------------------------------------------------------------- |
+| 302. [CSS Grid - Intro](#302)                     | 313. [Firefox Developer Tools](#313)                             |
+| 303. [Setup](#303)                                | 314. [grid-lines](#314)                                          |
+| 304. [Basic Syntax - grid-template-columns](#304) | 315. [Naming Grid Lines](#315)                                   |
+| 305. [Implicit Grid](#305)                        | 316. [Grid Template Areas](#316)                                 |
+| 306. [General CSS Setup](#306)                    | 317. [Order Property](#317)                                      |
+| 307. [Units - auto](#307)                         | 318. [Repeat Function](#318)                                     |
+| 308. [grid-template-rows](#308)                   | 319. [justify-content](#319)                                     |
+| 309. [fr units](#309)                             | 320. [align-content](#320)                                       |
+| 310. [gap property](#310)                         | 321. [align-items, jusitfy-items, align-self,justify-self](#321) |
+| 311. [Gap - New Syntax!](#311)                    | 322. [minmax()](#322)                                            |
+| 312. [fr vs %](#312)                              | 323. [auto-fit and auto-fill](#323)                              |
 
 <br>
 
