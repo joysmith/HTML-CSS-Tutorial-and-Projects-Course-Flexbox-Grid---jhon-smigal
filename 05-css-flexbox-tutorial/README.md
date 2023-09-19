@@ -632,7 +632,7 @@ body {
 
 > **_Business Objective: Layout_**
 
-<video src="notes/parallax.mp4" controls title="Title" width="600" height="300"></video>
+<img src="notes/parallax.gif" width="500">
 
 ---
 
