@@ -650,6 +650,7 @@ In index.html
     <title>Flexbox Tutorial</title>
     <link rel="stylesheet" href="styles.css" />
     <style>
+      /* 📦 Container/Parent property first*/
       .container {
         height: 300px;
         height: 40vh;
@@ -782,14 +783,76 @@ body {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.png" width="500">
+<img src="notes/contentwrap.png" width="500">
 
----
+<br>
+
+<img src="notes/contentstart.png" width="500">
+
+<br>
+
+<img src="notes/contentcentre.png" width="500">
+
+## <br>
+
+<img src="notes/contentend.png" width="500">
+
+## <br>
+
+<img src="notes/contentspacearound.png" width="500">
+
+## <br>
+
+<img src="notes/contentspacebetween.png" width="500">
+
+## <br>
 
 In index.html
 
 ```html
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Flexbox Tutorial</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- align-content -->
+    <!-- stretch(default) flex-end flex-start space-around space-between center  -->
+    <style>
+      /* 📦 Container/Parent property first*/
+      .container {
+        height: 300px;
+        height: 50vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: stretch;
+        align-content: flex-end;
+        align-content: flex-start;
+        align-content: center;
+        align-content: space-around;
+        align-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <!--parent = flex-container  -->
+    <div class="container">
+      <!-- children = flex-items -->
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+      <div class="box box-5">5</div>
+      <div class="box generic">G</div>
+      <div class="box generic">G</div>
+      <div class="box generic">G</div>
+      <div class="box generic">G</div>
+      <div class="box generic">G</div>
+    </div>
+  </body>
+</html>
 ```
 
 ---
@@ -797,7 +860,37 @@ In index.html
 In styles.css
 
 ```css
-
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: #f3f3f3;
+}
+.container {
+  border: 5px solid red;
+}
+.box {
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: #f3f3f3;
+}
+.box-1 {
+  background: #581f18;
+}
+.box-2 {
+  background: #f0a202;
+}
+.box-3 {
+  background: #d95d39;
+}
+.box-4 {
+  background: #202c59;
+}
+.box-5 {
+  background: #51cb20;
+}
+.generic {
+  background: #202c59;
+}
 ```
 
 <br>
@@ -806,14 +899,70 @@ In styles.css
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.png" width="500">
+<img src="notes/crossmainaxis.png" width="500">
+
+<br>
+
+<img src="notes/flex-direction_row_column.png" width="500">
 
 ---
 
 In index.html
 
 ```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Flexbox Tutorial</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- MAIN AXIS / CROSS AXIS -->
 
+    <style>
+      /* 📦 Container/Parent property first*/
+      .container {
+        height: 300px;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container-1 {
+        height: 800px;
+        border: 5px solid blue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!--parent = flex-container  -->
+    <div class="container">
+      <!-- children = flex-items -->
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+      <div class="box box-5">5</div>
+      <!-- <div class="box generic">G</div>
+      <div class="box generic">G</div>
+      <div class="box generic">G</div>
+      <div class="box generic">G</div>
+      <div class="box generic">G</div> -->
+    </div>
+    <div class="container-1">
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+      <div class="box box-5">5</div>
+    </div>
+  </body>
+</html>
 ```
 
 ---
@@ -821,7 +970,37 @@ In index.html
 In styles.css
 
 ```css
-
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: #f3f3f3;
+}
+.container {
+  border: 5px solid red;
+}
+.box {
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: #f3f3f3;
+}
+.box-1 {
+  background: #581f18;
+}
+.box-2 {
+  background: #f0a202;
+}
+.box-3 {
+  background: #d95d39;
+}
+.box-4 {
+  background: #202c59;
+}
+.box-5 {
+  background: #51cb20;
+}
+.generic {
+  background: #202c59;
+}
 ```
 
 <br>
@@ -830,14 +1009,61 @@ In styles.css
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.png" width="500">
+<img src="notes/order.png" width="500">
 
 ---
 
 In index.html
 
 ```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Flexbox Tutorial</title>
+    <link rel="stylesheet" href="styles.css" />
 
+    <!-- order ===  all children have order:0 by default-->
+
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* target individually */
+      .box-1 {
+        order: 2;
+      }
+
+      .box-2 {
+        order: 1;
+      }
+
+      .box-5 {
+        order: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <!--parent = flex-container  -->
+    <div class="container">
+      <!-- children = flex-items -->
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+      <div class="box box-5">5</div>
+      <!-- <div class="box generic">G</div>
+      <div class="box generic">G</div>
+      <div class="box generic">G</div>
+      <div class="box generic">G</div>
+      <div class="box generic">G</div> -->
+    </div>
+  </body>
+</html>
 ```
 
 ---
@@ -845,7 +1071,37 @@ In index.html
 In styles.css
 
 ```css
-
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: #f3f3f3;
+}
+.container {
+  border: 5px solid red;
+}
+.box {
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: #f3f3f3;
+}
+.box-1 {
+  background: #581f18;
+}
+.box-2 {
+  background: #f0a202;
+}
+.box-3 {
+  background: #d95d39;
+}
+.box-4 {
+  background: #202c59;
+}
+.box-5 {
+  background: #51cb20;
+}
+.generic {
+  background: #202c59;
+}
 ```
 
 <br>
@@ -854,14 +1110,60 @@ In styles.css
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.png" width="500">
+<img src="notes/alignself.png" width="500">
 
 ---
 
 In index.html
 
 ```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Flexbox Tutorial</title>
+    <link rel="stylesheet" href="styles.css" />
 
+    <!-- align-self -->
+
+    <style>
+      .container {
+        display: flex;
+        height: 500px;
+        align-items: flex-end;
+      }
+
+      /* target individually */
+      .box-5 {
+        align-self: flex-start;
+      }
+      .box-3 {
+        align-self: stretch;
+      }
+      .box-1 {
+        align-self: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!--parent = flex-container  -->
+    <div class="container">
+      <!-- children = flex-items -->
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+      <div class="box box-5">5</div>
+      <!-- <div class="box generic">G</div>
+      <div class="box generic">G</div>
+      <div class="box generic">G</div>
+      <div class="box generic">G</div>
+      <div class="box generic">G</div> -->
+    </div>
+  </body>
+</html>
 ```
 
 ---
@@ -869,7 +1171,37 @@ In index.html
 In styles.css
 
 ```css
-
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: #f3f3f3;
+}
+.container {
+  border: 5px solid red;
+}
+.box {
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: #f3f3f3;
+}
+.box-1 {
+  background: #581f18;
+}
+.box-2 {
+  background: #f0a202;
+}
+.box-3 {
+  background: #d95d39;
+}
+.box-4 {
+  background: #202c59;
+}
+.box-5 {
+  background: #51cb20;
+}
+.generic {
+  background: #202c59;
+}
 ```
 
 <br>
@@ -878,14 +1210,59 @@ In styles.css
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.png" width="500">
+<img src="notes/flexgrow.png" width="500">
 
 ---
 
 In index.html
 
 ```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Flexbox Tutorial</title>
+    <link rel="stylesheet" href="styles.css" />
 
+    <!-- flex-grow all children have flex-grow:0 -->
+
+    <style>
+      .container {
+        display: flex;
+      }
+      /* for all children */
+      /* .box {
+        flex-grow: 1;
+      } */
+
+      /* target individually */
+      .box-1 {
+        flex-grow: 2;
+      }
+      .box-2 {
+        flex-grow: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <!--parent = flex-container  -->
+    <div class="container">
+      <!-- children = flex-items -->
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+      <div class="box box-5">5</div>
+      <!-- <div class="box generic">G</div>
+      <div class="box generic">G</div>
+      <div class="box generic">G</div>
+      <div class="box generic">G</div>
+      <div class="box generic">G</div> -->
+    </div>
+  </body>
+</html>
 ```
 
 ---
@@ -893,7 +1270,37 @@ In index.html
 In styles.css
 
 ```css
-
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: #f3f3f3;
+}
+.container {
+  border: 5px solid red;
+}
+.box {
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: #f3f3f3;
+}
+.box-1 {
+  background: #581f18;
+}
+.box-2 {
+  background: #f0a202;
+}
+.box-3 {
+  background: #d95d39;
+}
+.box-4 {
+  background: #202c59;
+}
+.box-5 {
+  background: #51cb20;
+}
+.generic {
+  background: #202c59;
+}
 ```
 
 <br>
@@ -902,14 +1309,52 @@ In styles.css
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.png" width="500">
+<img src="notes/shrink.png" width="500">
 
 ---
 
 In index.html
 
 ```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Flexbox Tutorial</title>
+    <link rel="stylesheet" href="styles.css" />
 
+    <!-- flex-shrink all children have flex-shrink:1  -->
+
+    <style>
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .box-2 {
+        width: 300px;
+        flex-shrink: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!--parent = flex-container  -->
+    <div class="container">
+      <!-- children = flex-items -->
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+      <div class="box box-5">5</div>
+      <!-- <div class="box generic">G</div>
+      <div class="box generic">G</div>
+      <div class="box generic">G</div>
+      <div class="box generic">G</div>
+      <div class="box generic">G</div> -->
+    </div>
+  </body>
+</html>
 ```
 
 ---
@@ -917,7 +1362,37 @@ In index.html
 In styles.css
 
 ```css
-
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: #f3f3f3;
+}
+.container {
+  border: 5px solid red;
+}
+.box {
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: #f3f3f3;
+}
+.box-1 {
+  background: #581f18;
+}
+.box-2 {
+  background: #f0a202;
+}
+.box-3 {
+  background: #d95d39;
+}
+.box-4 {
+  background: #202c59;
+}
+.box-5 {
+  background: #51cb20;
+}
+.generic {
+  background: #202c59;
+}
 ```
 
 <br>
@@ -926,14 +1401,51 @@ In styles.css
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.png" width="500">
+<img src="notes/flexbasis.png" width="500">
 
 ---
 
 In index.html
 
 ```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Flexbox Tutorial</title>
+    <link rel="stylesheet" href="styles.css" />
 
+    <!-- flex-basis base value and flex shortcut -->
+
+    <style>
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+      .box {
+        flex: 0 0 calc(25% - 1rem);
+      }
+    </style>
+  </head>
+  <body>
+    <!--parent = flex-container  -->
+    <div class="container">
+      <!-- children = flex-items -->
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+      <!-- <div class="box generic">G</div>
+      <div class="box generic">G</div>
+      <div class="box generic">G</div>
+      <div class="box generic">G</div>
+      <div class="box generic">G</div> -->
+    </div>
+  </body>
+</html>
 ```
 
 ---
@@ -941,7 +1453,40 @@ In index.html
 In styles.css
 
 ```css
-
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: #f3f3f3;
+}
+.container {
+  border: 5px solid red;
+}
+.box {
+  padding: 30px 0;
+  text-align: center;
+  font-size: 35px;
+  color: #f3f3f3;
+}
+.box-1 {
+  background: #581f18;
+}
+.box-2 {
+  background: #f0a202;
+}
+.box-3 {
+  background: #d95d39;
+}
+.box-4 {
+  background: #202c59;
+}
+.box-5 {
+  background: #51cb20;
+}
+.generic {
+  background: #202c59;
+}
 ```
 
 <br>
@@ -950,14 +1495,51 @@ In styles.css
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.png" width="500">
+<img src="notes/gap.png" width="500">
 
 ---
 
 In index.html
 
 ```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <title>Document</title>
+
+    <!-- normalize css -->
+    <link rel="stylesheet" href="./normalize.css" />
+
+    <!-- main css  -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <nav>
+      <h2>logo</h2>
+      <ul class="nav-links">
+        <li>
+          <a href="#home" class="nav-link">home</a>
+        </li>
+        <li>
+          <a href="#about" class="nav-link">about</a>
+        </li>
+        <li>
+          <a href="#contact" class="nav-link">contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="box box-1"></div>
+      <div class="box box-2"></div>
+      <div class="box box-3"></div>
+      <div class="box box-4"></div>
+    </div>
+  </body>
+</html>
 ```
 
 ---
@@ -965,7 +1547,221 @@ In index.html
 In styles.css
 
 ```css
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400|Inconsolata:400");
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+:root {
+  /* COLORS  */
+  /* primary */
+  --primary-0: #f0efff;
+  --primary-50: #d8d6ff;
+  --primary-100: #c1beff;
+  --primary-200: #aaa5ff;
+  --primary-300: #938dff;
+  --primary-400: #7b74ff;
+  /* main */
+  --primary-500: #645cff;
+  --primary-600: #554ed9;
+  --primary-700: #4640b3;
+  --primary-800: #37338c;
+  --primary-900: #282566;
+  --primary-1000: #191740;
+  --primary-1100: #0a0919;
+  /* grey */
+  --grey-0: #fafbfc;
+  --grey-50: #f2f4f8;
+  --grey-100: #eaedf3;
+  --grey-200: #e2e7ef;
+  --grey-300: #dbe0ea;
+  --grey-400: #d3dae6;
+  --grey-500: #cbd3e1;
+  --grey-600: #adb3bf;
+  --grey-700: #8e949e;
+  --grey-800: #70747c;
+  --grey-900: #51545a;
+  --grey-1000: #333538;
+  --grey-1100: #141516;
 
+  /* rest */
+  --black: #222;
+  --white: #fff;
+  --red-light: #f8d7da;
+  --red-dark: #842029;
+  --green-light: #d1e7dd;
+  --green-dark: #0f5132;
+
+  /* typography */
+  --headingFont: "Inconsolata", monospace;
+  --bodyFont: "Montserrat", sans-serif;
+  --smallText: 0.7em;
+  /* rest */
+  --backgroundColor: var(--grey-50);
+  --textColor: var(--grey-1000);
+  --borderRadius: 0.25rem;
+  --letterSpacing: 1px;
+  --transition: 0.3s ease-in-out all;
+  --max-width: 1120px;
+  --fixed-width: 600px;
+  /* box shadows */
+  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+body {
+  background: var(--backgroundColor);
+  color: var(--textColor);
+  font-family: var(--bodyFont);
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  max-width: 40em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  margin-bottom: 1.38rem;
+  font-family: var(--headingFont);
+  font-weight: 400;
+  line-height: 1.3;
+  text-transform: capitalize;
+  letter-spacing: var(--letterSpacing);
+}
+
+h1 {
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+small,
+.text_small {
+  font-size: var(--smallText);
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+/*************
+     Buttons 
+*************/
+button,
+.btn {
+  cursor: pointer;
+  appearance: none;
+  color: var(--white);
+  background: var(--primary-500);
+  border: none;
+  border-radius: var(--borderRadius);
+  letter-spacing: var(--letterSpacing);
+  padding: 0.375rem 0.75rem;
+  box-shadow: var(--shadow-1);
+  transition: var(--transition);
+  text-transform: capitalize;
+}
+button:hover,
+.btn:hover {
+  color: var(--white);
+  background: var(--primary-700);
+  box-shadow: var(--shadow-2);
+}
+button.small {
+  padding: 0.25rem 0.5rem;
+  font-size: var(--smallText);
+}
+button.hipster {
+  color: var(--primary-500);
+  background: var(--primary-50);
+  box-shadow: var(--shadow-1);
+}
+button.hipster:hover {
+  background: var(--primary-100);
+  box-shadow: var(--shadow-2);
+}
+button.block {
+  width: 100%;
+}
+h2 {
+  margin-bottom: 0;
+  color: var(--primary-500);
+  text-transform: uppercase;
+}
+/************* Nav *************/
+
+nav {
+  height: 5rem;
+  padding: 0 2rem;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-links {
+  display: flex;
+  gap: 0 0.5rem;
+}
+.nav-link {
+  text-transform: capitalize;
+  color: #222;
+  font-size: 1.25rem;
+  /* margin-left: 0.5rem; */
+}
+
+.container {
+  border: 5px solid #7b886b;
+  margin: 3rem;
+}
+.box {
+  width: 125px;
+  height: 125px;
+}
+.box-1 {
+  background: #acbed8;
+}
+.box-2 {
+  background: #fed18c;
+}
+.box-3 {
+  background: #714955;
+}
+.box-4 {
+  background: #fe654f;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+}
 ```
 
 <br>
