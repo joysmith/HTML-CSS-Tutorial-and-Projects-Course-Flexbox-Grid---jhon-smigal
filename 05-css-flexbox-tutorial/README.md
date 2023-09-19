@@ -1,4 +1,4 @@
-| Index                           | Index                                 |
+| property                        | property                              |
 | ------------------------------- | ------------------------------------- |
 | 256. [CSS Flexbox Intro](#256)  | 264. [align-content](#264)            |
 | 257. [Setup](#257)              | 265. [Main Axis / Cross Axis](#265)   |
