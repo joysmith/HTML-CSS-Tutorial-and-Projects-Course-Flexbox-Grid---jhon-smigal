@@ -4,11 +4,11 @@
 | 303. [Setup](#303)                                | 314. [grid-lines](#314)                                          |
 | 304. [Basic Syntax - grid-template-columns](#304) | 315. [Naming Grid Lines](#315)                                   |
 | 305. [Implicit Grid](#305)                        | 316. [Grid Template Areas](#316)                                 |
-| 306. [General CSS Setup](#306)                    | 317. [Order Property](#317)                                      |
+| 306. [General CSS Setup](#306)                    | 317. [Order/Parent Property](#317)                               |
 | 307. [Units - auto](#307)                         | 318. [Repeat Function](#318)                                     |
 | 308. [grid-template-rows](#308)                   | 319. [justify-content](#319)                                     |
 | 309. [fr units](#309)                             | 320. [align-content](#320)                                       |
-| 310. [gap property](#310)                         | 321. [align-items, jusitfy-items, align-self,justify-self](#321) |
+| 310. [gap/Parent property](#310)                  | 321. [align-items, jusitfy-items, align-self,justify-self](#321) |
 | 311. [Gap - New Syntax!](#311)                    | 322. [minmax()](#322)                                            |
 | 312. [fr vs %](#312)                              | 323. [auto-fit and auto-fill](#323)                              |
 
@@ -104,7 +104,8 @@ body {
     <link rel="stylesheet" href="styles.css" />
 
     <style>
-      /* How to setup grid layout: Two most imp property*/
+      /* 📦 Container/Parent property first*/
+      /* How to setup grid layout: Two most imp/Parent property*/
       .container {
         display: grid;
         /* What kind of columns I would like, what would be the width/size of the columns and  how many columns I want*/
@@ -170,7 +171,7 @@ body {
 ---
 
 - Anytime we need to work with grid we need a parent container and children items
-- Two most imp property for setting up grid: display: grid, grid-template-columns: 200px 300px;
+- Two most imp/Parent property for setting up grid: display: grid, grid-template-columns: 200px 300px;
 
 <br>
 
@@ -195,6 +196,7 @@ body {
     <link rel="stylesheet" href="styles.css" />
 
     <style>
+      /* 📦 Container/Parent property first*/
       .container {
         display: grid;
         /* What kind of columns I would like, what would be the width/size of the columns and  how many columns I want*/
@@ -284,6 +286,7 @@ body {
     <title>Grid Tutorial</title>
     <link rel="stylesheet" href="styles.css" />
     <style>
+      /* 📦 Container/Parent property first*/
       .container {
         display: grid;
         /* What kind of columns I would like, what would be the width/size of the columns and  how many columns I want*/
@@ -372,6 +375,7 @@ body {
     <title>Grid Tutorial</title>
     <link rel="stylesheet" href="styles.css" />
     <style>
+      /* 📦 Container/Parent property first*/
       /* units - rows as well */
       /* px rem em % auto fr  */
       .container {
@@ -465,6 +469,7 @@ body {
     <title>Grid Tutorial</title>
     <link rel="stylesheet" href="styles.css" />
     <style>
+      /* 📦 Container/Parent property first*/
       /* rows */
       .container {
         /* I want this container to be 100% height of the device Screen */
@@ -561,6 +566,7 @@ body {
     <title>Grid Tutorial</title>
     <link rel="stylesheet" href="styles.css" />
     <style>
+      /* 📦 Container/Parent property first*/
       /* fr units - fraction of available parent container space */
       .container {
         /* set container height 100% of device screen */
@@ -635,7 +641,7 @@ body {
 
 <br>
 
-### 310. gap property<a id="310"></a>
+### 310. gap/Parent property<a id="310"></a>
 
 > **_Business Objective: Layout_**
 
@@ -655,6 +661,7 @@ body {
     <title>Grid Tutorial</title>
     <link rel="stylesheet" href="styles.css" />
     <style>
+      /* 📦 Container/Parent property first*/
       /* gap */
       .container {
         /* set container height 100% of device screen */
@@ -758,6 +765,7 @@ body {
     <title>Grid Tutorial</title>
     <link rel="stylesheet" href="styles.css" />
     <style>
+      /* 📦 Container/Parent property first*/
       /* grid-gap - absolete */
       /* gap */
       .container {
@@ -860,7 +868,7 @@ body {
     <title>Grid Tutorial</title>
     <link rel="stylesheet" href="styles.css" />
     <style>
-      /*  */
+      /* 📦 Container/Parent property first*/
       .container {
         /* set container height 100% of device screen */
         min-height: 100vh;
@@ -958,7 +966,7 @@ body {
     <title>Grid Tutorial</title>
     <link rel="stylesheet" href="styles.css" />
     <style>
-      /*  */
+      /* 📦 Container/Parent property first*/
       .container {
         /* set container height 100% of device screen */
         min-height: 100vh;
@@ -1059,6 +1067,7 @@ Turn ⬇️  ⬇️ ⬇️ ⬇️ ⬇️   ⬇️
     <title>Grid Tutorial</title>
     <link rel="stylesheet" href="styles.css" />
     <style>
+      /* 📦 Container/Parent property first*/
       /* grid lines - column lines, row lines  */
       .container {
         /* set margin all around container */
@@ -1168,6 +1177,7 @@ body {
     <title>Grid Tutorial</title>
     <link rel="stylesheet" href="styles.css" />
     <style>
+      /* 📦 Container/Parent property first*/
       /* naming grid lines  */
       .container {
         margin: 7rem;
@@ -1276,6 +1286,7 @@ body {
     <title>Grid Tutorial</title>
     <link rel="stylesheet" href="styles.css" />
     <style>
+      /* 📦 Container/Parent property first*/
       /* grid template areas  */
       .container {
         display: grid;
@@ -1374,11 +1385,11 @@ body {
 
 <br>
 
-### 317. Order Property<a id="317"></a>
+### 317. Order/Parent Property<a id="317"></a>
 
 > **_Business Objective: Layout_**
 
-<img src="notes/13-order-property.png" width="900">
+<img src="notes/13-order/Parent-property.png" width="900">
 
 ---
 
@@ -1394,6 +1405,7 @@ body {
     <title>Grid Tutorial</title>
     <link rel="stylesheet" href="styles.css" />
     <style>
+      /* 📦 Container/Parent property first*/
       /* order  */
       .container {
         display: grid;
@@ -1493,6 +1505,7 @@ body {
     <title>Grid Tutorial</title>
     <link rel="stylesheet" href="styles.css" />
     <style>
+      /* 📦 Container/Parent property first*/
       /* repeat  */
       /* good for creating matrix layout */
       .container {
@@ -1603,6 +1616,7 @@ The justify-contents align content/items **horizontally**
     <title>Grid Tutorial</title>
     <link rel="stylesheet" href="styles.css" />
     <style>
+      /* 📦 Container/Parent property first*/
       /* justify-content: flex-start  default */
       .container {
         min-height: 100vh;
@@ -1719,9 +1733,10 @@ The align-content align content/items **Vertically**
     <title>Grid Tutorial</title>
     <link rel="stylesheet" href="styles.css" />
     <style>
+      /* 📦 Container/Parent property first*/
       /* align-content stretch-default */
       .container {
-        /* NOTE to use align-content property we have to use min-height property too */
+        /* NOTE to use align-content/Parent property we have to use min-height/Parent property too */
         min-height: 100vh;
         display: grid;
         grid-template-columns: 100px 100px 200px;
@@ -1792,7 +1807,7 @@ body {
 }
 ```
 
-NOTE to use align-content property we have to use min-height property too
+NOTE to use align-content/Parent property we have to use min-height/Parent property too
 
 <br>
 
@@ -1816,6 +1831,7 @@ NOTE to use align-content property we have to use min-height property too
     <title>Grid Tutorial</title>
     <link rel="stylesheet" href="styles.css" />
     <style>
+      /* 📦 Container/Parent property first*/
       /* align-items justify-items --- content within items*/
       /* justify-self align-self --- single item content */
       .container {
@@ -1915,6 +1931,7 @@ make device screen shrink
     <title>Grid Tutorial</title>
     <link rel="stylesheet" href="styles.css" />
     <style>
+      /* 📦 Container/Parent property first*/
       /* minmax()*/
       .container {
         min-height: 100vh;
@@ -2008,6 +2025,7 @@ body {
     <title>Grid Tutorial</title>
     <link rel="stylesheet" href="styles.css" />
     <style>
+      /* 📦 Container/Parent property first*/
       /* auto-fill keeps creating  auto-fit only fits */
       .container {
         display: grid;
