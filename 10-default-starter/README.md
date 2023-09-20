@@ -744,6 +744,8 @@ ul {
 
 #### Colors
 
+In main.css
+
 ```css
 :root {
   /* primary */
@@ -757,7 +759,7 @@ ul {
 }
 ```
 
-In main.css, copy color from jhon notes
+In main.css, copy color from john notes
 
 ```css
 *,
@@ -858,74 +860,465 @@ ul {
 
 ### 392. Primary Shades<a id="392"></a>
 
-In main.css
+> **_Business Objective: Layout_**
+
+<img src="notes/primarycolorshades.png" width="500">
+
+---
+
+- Go to site [coolors](https://coolors.co/) select any color which will act as primary color copy the hex value
+- Go to the site [shadowlord](https://noeldelgado.github.io/shadowlord/#73fdad) and paste primary color to generate 10 shades set 20%
+
+In main.css, set up primary color shade in following structure
 
 ```css
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
 
+@import url("https://fonts.googleapis.com/css?family=Poppins:400");
+
+html {
+  font-size: 100%;
+} /*16px*/
+
+:root {
+  /* primary */
+  /* 1. colors */
+  --primary-100: #e2e0ff;
+  --primary-200: #c1beff;
+  --primary-300: #a29dff;
+  --primary-400: #837dff;
+  --primary-500: #645cff;
+  --primary-600: #504acc;
+  --primary-700: #3c3799;
+  --primary-800: #282566;
+  --primary-900: #141233;
+
+  /* grey */
+  --black: #222;
+  --white: #fff;
+  --red-light: #f8d7da;
+  --red-dark: #842029;
+  --green-light: #d1e7dd;
+  --green-dark: #0f5132;
+
+  /* fonts */
+  --headingFont: "Roboto", sans-serif;
+  --bodyFont: "Nunito", sans-serif;
+  --small-text: 0.875rem;
+  --extra-small-text: 0.7em;
+
+  /* rest of the vars */
+}
+
+body {
+  background: white;
+  font-family: var(--bodyFont);
+  font-weight: 400;
+  line-height: 1.75;
+  color: #000000;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  max-width: 40em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  margin-bottom: 1.38rem;
+  font-family: var(--headingFont);
+  font-weight: 400;
+  line-height: 1.3;
+  text-transform: capitalize;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+small,
+.text_small {
+  font-size: var(--small-text);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
 ```
 
 <br>
 
 ### 393. Gray Shades<a id="393"></a>
 
-In index.html
+Library/Faster Approach
 
-```html
+- [bootstrap](https://getbootstrap.com/docs/5.0/customize/color/#color-sass-maps)
+- [tailwind](https://tailwindcss.com/docs/customizing-colors#color-palette-reference)
 
-```
+##### Select Grey
 
----
+- [tailwind](https://tailwindcss.com/docs/customizing-colors#color-palette-reference)
 
 In main.css
 
 ```css
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
 
+@import url("https://fonts.googleapis.com/css?family=Poppins:400");
+
+html {
+  font-size: 100%;
+} /*16px*/
+
+:root {
+  /* primary */
+  /* colors */
+  --primary-100: #e2e0ff;
+  --primary-200: #c1beff;
+  --primary-300: #a29dff;
+  --primary-400: #837dff;
+  --primary-500: #645cff;
+  --primary-600: #504acc;
+  --primary-700: #3c3799;
+  --primary-800: #282566;
+  --primary-900: #141233;
+
+  /* 1. grey */
+  --grey-50: #f8fafc;
+  --grey-100: #f1f5f9;
+  --grey-200: #e2e8f0;
+  --grey-300: #cbd5e1;
+  --grey-400: #94a3b8;
+  --grey-500: #64748b;
+  --grey-600: #475569;
+  --grey-700: #334155;
+  --grey-800: #1e293b;
+  --grey-900: #0f172a;
+
+  --black: #222;
+  --white: #fff;
+  --red-light: #f8d7da;
+  --red-dark: #842029;
+  --green-light: #d1e7dd;
+  --green-dark: #0f5132;
+
+  /* fonts */
+  --headingFont: "Roboto", sans-serif;
+  --bodyFont: "Nunito", sans-serif;
+  --small-text: 0.875rem;
+  --extra-small-text: 0.7em;
+
+  /* rest of the vars: setup overall app theme*/
+  /* 2 background color  */
+  --backgroundColor: var(--grey-50);
+  /* 4 text color */
+  --textColor: var(--grey-900);
+}
+
+body {
+  /* 3 */
+  background: var(--backgroundColor);
+  font-family: var(--bodyFont);
+  font-weight: 400;
+  line-height: 1.75;
+  /* 5 */
+  color: var(--textColor);
+}
+
+p {
+  margin-bottom: 1.5rem;
+  max-width: 40em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  margin-bottom: 1.38rem;
+  font-family: var(--headingFont);
+  font-weight: 400;
+  line-height: 1.3;
+  text-transform: capitalize;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+small,
+.text_small {
+  font-size: var(--small-text);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
 ```
 
 <br>
 
 ### 394. Happy Hues<a id="394"></a>
 
-In index.html
-
-```html
-
-```
-
----
-
-In main.css
-
-```css
-
-```
+- Go to [happyheus](https://www.happyhues.co/) for smaller project this site give information on where to use which color
+- when I'm working on project where I Don't need shades
 
 <br>
 
 ### 395. Rest of the Vars<a id="395"></a>
 
-In index.html
+In main.css, writing rest of the vars for App Theme
 
-```html
+```css
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
 
+@import url("https://fonts.googleapis.com/css?family=Poppins:400");
+
+html {
+  font-size: 100%;
+} /*16px*/
+
+:root {
+  /* primary */
+  /* colors */
+  --primary-100: #e2e0ff;
+  --primary-200: #c1beff;
+  --primary-300: #a29dff;
+  --primary-400: #837dff;
+  --primary-500: #645cff;
+  --primary-600: #504acc;
+  --primary-700: #3c3799;
+  --primary-800: #282566;
+  --primary-900: #141233;
+
+  /*  grey */
+  --grey-50: #f8fafc;
+  --grey-100: #f1f5f9;
+  --grey-200: #e2e8f0;
+  --grey-300: #cbd5e1;
+  --grey-400: #94a3b8;
+  --grey-500: #64748b;
+  --grey-600: #475569;
+  --grey-700: #334155;
+  --grey-800: #1e293b;
+  --grey-900: #0f172a;
+
+  --black: #222;
+  --white: #fff;
+  --red-light: #f8d7da;
+  --red-dark: #842029;
+  --green-light: #d1e7dd;
+  --green-dark: #0f5132;
+
+  /* fonts */
+  --headingFont: "Roboto", sans-serif;
+  --bodyFont: "Nunito", sans-serif;
+  --small-text: 0.875rem;
+  --extra-small-text: 0.7em;
+
+  /* App THEME: rest of the vars */
+  --backgroundColor: var(--grey-50);
+  --textColor: var(--grey-900);
+  /* 1. image   */
+  --borderRadius: 0.25rem;
+  /* 2.  */
+  --letterSpacing: 1px;
+  /* 3 hovering effect*/
+  --transition: 0.3s ease-in-out all;
+  /* 4 parent container max width */
+  --max-width: 1120px;
+  /* 5 form fixed width on big screen so it may look bigger*/
+  --fixed-width: 600px;
+
+  /* 6 box shadow from tail wind library*/
+  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+body {
+  background: var(--backgroundColor);
+  font-family: var(--bodyFont);
+  font-weight: 400;
+  line-height: 1.75;
+
+  color: var(--textColor);
+}
+
+p {
+  margin-bottom: 1.5rem;
+  max-width: 40em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  margin-bottom: 1.38rem;
+  font-family: var(--headingFont);
+  font-weight: 400;
+  line-height: 1.3;
+  text-transform: capitalize;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+small,
+.text_small {
+  font-size: var(--small-text);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
 ```
 
 ---
 
-In main.css
-
-```css
-
-```
+How to extract shadow from tailwind library and structure it ref step 6
+<img src="notes/tailwindshadow.png" width="500">
 
 <br>
 
 ### 396. Image<a id="396"></a>
 
-In index.html
+- Download any image from google and place it in project
+
+- In index.html, add image tag
 
 ```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Default Starter</title>
+    <!-- normalize -->
+    <link rel="stylesheet" href="./normalize.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <h1>hello world</h1>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat dolorem
+      a ullam repudiandae! Voluptates dolorum ducimus, ipsa natus vel ratione.
+    </p>
 
+    <h2>hello world</h2>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat dolorem
+      a ullam repudiandae! Voluptates dolorum ducimus, ipsa natus vel ratione.
+    </p>
+
+    <h1>hello world</h1>
+    <h2>hello world</h2>
+    <h3>hello world</h3>
+    <h4>hello world</h4>
+    <h5>hello world</h5>
+
+    <a href="#">link example</a>
+
+    <ul>
+      <li>First Item</li>
+      <li>Second Item</li>
+      <li>Third Item</li>
+    </ul>
+    <!-- 1 -->
+    <div class="container">
+      <img src="./computer.png" alt="computer" class="img" />
+    </div>
+  </body>
+</html>
 ```
 
 ---
@@ -933,7 +1326,155 @@ In index.html
 In main.css
 
 ```css
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
 
+@import url("https://fonts.googleapis.com/css?family=Poppins:400");
+
+html {
+  font-size: 100%;
+} /*16px*/
+
+:root {
+  /* primary */
+  /* colors */
+  --primary-100: #e2e0ff;
+  --primary-200: #c1beff;
+  --primary-300: #a29dff;
+  --primary-400: #837dff;
+  --primary-500: #645cff;
+  --primary-600: #504acc;
+  --primary-700: #3c3799;
+  --primary-800: #282566;
+  --primary-900: #141233;
+
+  /*  grey */
+  --grey-50: #f8fafc;
+  --grey-100: #f1f5f9;
+  --grey-200: #e2e8f0;
+  --grey-300: #cbd5e1;
+  --grey-400: #94a3b8;
+  --grey-500: #64748b;
+  --grey-600: #475569;
+  --grey-700: #334155;
+  --grey-800: #1e293b;
+  --grey-900: #0f172a;
+
+  --black: #222;
+  --white: #fff;
+  --red-light: #f8d7da;
+  --red-dark: #842029;
+  --green-light: #d1e7dd;
+  --green-dark: #0f5132;
+
+  /* fonts */
+  --headingFont: "Roboto", sans-serif;
+  --bodyFont: "Nunito", sans-serif;
+  --small-text: 0.875rem;
+  --extra-small-text: 0.7em;
+
+  /* App THEME: rest of the vars */
+  --backgroundColor: var(--grey-50);
+  --textColor: var(--grey-900);
+  /* 1. image   */
+  --borderRadius: 0.25rem;
+  /* 2.  */
+  --letterSpacing: 1px;
+  /* 3 hovering effect*/
+  --transition: 0.3s ease-in-out all;
+  /* 4 parent container max width */
+  --max-width: 1120px;
+  /* 5 form fixed width on big screen so it may look bigger*/
+  --fixed-width: 600px;
+
+  /* 6 box shadow from tail wind library*/
+  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+body {
+  background: var(--backgroundColor);
+  font-family: var(--bodyFont);
+  font-weight: 400;
+  line-height: 1.75;
+
+  color: var(--textColor);
+}
+
+p {
+  margin-bottom: 1.5rem;
+  max-width: 40em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  margin-bottom: 1.38rem;
+  font-family: var(--headingFont);
+  font-weight: 400;
+  line-height: 1.3;
+  text-transform: capitalize;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+small,
+.text_small {
+  font-size: var(--small-text);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.container {
+  width: 50vw;
+  border: 5px, solid var(--primary-500);
+  border-radius: var(--borderRadius);
+  max-width: var(--var-width);
+}
+
+/* 2  */
+.img {
+  /* the width will depend on parent */
+  width: 100%;
+  /* image by default are inline to override set it block level */
+  display: block;
+  /* to keep aspect ratio, don't put height prop it will distort image */
+  object-fit: cover;
+}
 ```
 
 <br>
@@ -943,7 +1484,58 @@ In main.css
 In index.html
 
 ```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Default Starter</title>
+    <!-- normalize -->
+    <link rel="stylesheet" href="./normalize.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <h1>hello world</h1>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat dolorem
+      a ullam repudiandae! Voluptates dolorum ducimus, ipsa natus vel ratione.
+    </p>
 
+    <h2>hello world</h2>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat dolorem
+      a ullam repudiandae! Voluptates dolorum ducimus, ipsa natus vel ratione.
+    </p>
+
+    <h1>hello world</h1>
+    <h2>hello world</h2>
+    <h3>hello world</h3>
+    <h4>hello world</h4>
+    <h5>hello world</h5>
+
+    <a href="#">link example</a>
+
+    <ul>
+      <li>First Item</li>
+      <li>Second Item</li>
+      <li>Third Item</li>
+    </ul>
+
+    <div class="container">
+      <img src="./computer.png" alt="computer" class="img" />
+    </div>
+
+    <br />
+    <!-- 1 -->
+    <button class="btn" type="button">regular button</button>
+    <button class="btn btn-hipster" type="button">hipster button</button>
+    <br />
+    <br />
+    <br />
+  </body>
+</html>
 ```
 
 ---
@@ -951,17 +1543,253 @@ In index.html
 In main.css
 
 ```css
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
 
+@import url("https://fonts.googleapis.com/css?family=Poppins:400");
+
+html {
+  font-size: 100%;
+} /*16px*/
+
+:root {
+  /* primary */
+  /* colors */
+  --primary-100: #e2e0ff;
+  --primary-200: #c1beff;
+  --primary-300: #a29dff;
+  --primary-400: #837dff;
+  --primary-500: #645cff;
+  --primary-600: #504acc;
+  --primary-700: #3c3799;
+  --primary-800: #282566;
+  --primary-900: #141233;
+
+  /*  grey */
+  --grey-50: #f8fafc;
+  --grey-100: #f1f5f9;
+  --grey-200: #e2e8f0;
+  --grey-300: #cbd5e1;
+  --grey-400: #94a3b8;
+  --grey-500: #64748b;
+  --grey-600: #475569;
+  --grey-700: #334155;
+  --grey-800: #1e293b;
+  --grey-900: #0f172a;
+
+  --black: #222;
+  --white: #fff;
+  --red-light: #f8d7da;
+  --red-dark: #842029;
+  --green-light: #d1e7dd;
+  --green-dark: #0f5132;
+
+  /* fonts */
+  --headingFont: "Roboto", sans-serif;
+  --bodyFont: "Nunito", sans-serif;
+  --small-text: 0.875rem;
+  --extra-small-text: 0.7em;
+
+  /* App THEME: rest of the vars */
+  --backgroundColor: var(--grey-50);
+  --textColor: var(--grey-900);
+  /* 1. image   */
+  --borderRadius: 0.25rem;
+  /* 2.  */
+  --letterSpacing: 1px;
+  /* 3 hovering effect*/
+  --transition: 0.3s ease-in-out all;
+  /* 4 parent container max width */
+  --max-width: 1120px;
+  /* 5 form fixed width on big screen so it may look bigger*/
+  --fixed-width: 600px;
+
+  /* 6 box shadow from tail wind library*/
+  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+body {
+  background: var(--backgroundColor);
+  font-family: var(--bodyFont);
+  font-weight: 400;
+  line-height: 1.75;
+
+  color: var(--textColor);
+}
+
+p {
+  margin-bottom: 1.5rem;
+  max-width: 40em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  margin-bottom: 1.38rem;
+  font-family: var(--headingFont);
+  font-weight: 400;
+  line-height: 1.3;
+  text-transform: capitalize;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+small,
+.text_small {
+  font-size: var(--small-text);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.container {
+  width: 50vw;
+  border: 5px, solid var(--primary-500);
+  border-radius: var(--borderRadius);
+  max-width: var(--var-width);
+}
+
+.img {
+  /* the width will depend on parent */
+  width: 100%;
+  /* image by default are inline to override set it block level */
+  display: block;
+  /* to keep aspect ratio, don't put height prop it will distort image */
+  object-fit: cover;
+}
+
+/* 2  */
+.btn {
+  cursor: pointer;
+  color: var(--white);
+  background: var(--primary-500);
+  border: transparent;
+  border-radius: var(--borderRadius);
+  letter-spacing: var(--letterSpacing);
+  padding: 0.375rem 0.75rem;
+  box-shadow: var(--shadow-1);
+  transition: var(--transition);
+  text-transform: capitalize;
+  display: inline-block;
+}
+.btn:hover {
+  background: var(--primary-700);
+  box-shadow: var(--shadow-3);
+}
+
+/* 3 */
+.btn-hipster {
+  color: var(--primary-500);
+  background: var(--primary-200);
+}
+.btn-hipster:hover {
+  color: var(--primary-200);
+  background: var(--primary-700);
+}
+
+.btn-block {
+  /* make button width same as form width */
+  width: 100%;
+}
 ```
 
 <br>
 
 ### 398. Alerts<a id="398"></a>
 
-In index.html
+In index.html, add alert
 
 ```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Default Starter</title>
+    <!-- normalize -->
+    <link rel="stylesheet" href="./normalize.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <h1>hello world</h1>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat dolorem
+      a ullam repudiandae! Voluptates dolorum ducimus, ipsa natus vel ratione.
+    </p>
 
+    <h2>hello world</h2>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat dolorem
+      a ullam repudiandae! Voluptates dolorum ducimus, ipsa natus vel ratione.
+    </p>
+
+    <h1>hello world</h1>
+    <h2>hello world</h2>
+    <h3>hello world</h3>
+    <h4>hello world</h4>
+    <h5>hello world</h5>
+
+    <a href="#">link example</a>
+
+    <ul>
+      <li>First Item</li>
+      <li>Second Item</li>
+      <li>Third Item</li>
+    </ul>
+
+    <div class="container">
+      <img src="./computer.png" alt="computer" class="img" />
+    </div>
+
+    <br />
+
+    <button class="btn" type="button">regular button</button>
+    <button class="btn btn-hipster" type="button">hipster button</button>
+    <br />
+    <br />
+    <br />
+
+    <!-- 1 -->
+    <div class="alert alert-danger">hello from danger</div>
+    <div class="alert alert-success">hello from success</div>
+  </body>
+</html>
 ```
 
 ---
@@ -969,43 +1797,555 @@ In index.html
 In main.css
 
 ```css
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
 
+@import url("https://fonts.googleapis.com/css?family=Poppins:400");
+
+html {
+  font-size: 100%;
+} /*16px*/
+
+:root {
+  /* primary */
+  /* colors */
+  --primary-100: #e2e0ff;
+  --primary-200: #c1beff;
+  --primary-300: #a29dff;
+  --primary-400: #837dff;
+  --primary-500: #645cff;
+  --primary-600: #504acc;
+  --primary-700: #3c3799;
+  --primary-800: #282566;
+  --primary-900: #141233;
+
+  /*  grey */
+  --grey-50: #f8fafc;
+  --grey-100: #f1f5f9;
+  --grey-200: #e2e8f0;
+  --grey-300: #cbd5e1;
+  --grey-400: #94a3b8;
+  --grey-500: #64748b;
+  --grey-600: #475569;
+  --grey-700: #334155;
+  --grey-800: #1e293b;
+  --grey-900: #0f172a;
+
+  --black: #222;
+  --white: #fff;
+  --red-light: #f8d7da;
+  --red-dark: #842029;
+  --green-light: #d1e7dd;
+  --green-dark: #0f5132;
+
+  /* fonts */
+  --headingFont: "Roboto", sans-serif;
+  --bodyFont: "Nunito", sans-serif;
+  --small-text: 0.875rem;
+  --extra-small-text: 0.7em;
+
+  /* App THEME: rest of the vars */
+  --backgroundColor: var(--grey-50);
+  --textColor: var(--grey-900);
+  /* 1. image   */
+  --borderRadius: 0.25rem;
+  /* 2.  */
+  --letterSpacing: 1px;
+  /* 3 hovering effect*/
+  --transition: 0.3s ease-in-out all;
+  /* 4 parent container max width */
+  --max-width: 1120px;
+  /* 5 form fixed width on big screen so it may look bigger*/
+  --fixed-width: 600px;
+
+  /* 6 box shadow from tail wind library*/
+  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+body {
+  background: var(--backgroundColor);
+  font-family: var(--bodyFont);
+  font-weight: 400;
+  line-height: 1.75;
+
+  color: var(--textColor);
+}
+
+p {
+  margin-bottom: 1.5rem;
+  max-width: 40em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  margin-bottom: 1.38rem;
+  font-family: var(--headingFont);
+  font-weight: 400;
+  line-height: 1.3;
+  text-transform: capitalize;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+small,
+.text_small {
+  font-size: var(--small-text);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.container {
+  width: 50vw;
+  border: 5px, solid var(--primary-500);
+  border-radius: var(--borderRadius);
+  max-width: var(--var-width);
+}
+
+.img {
+  /* the width will depend on parent */
+  width: 100%;
+  /* image by default are inline to override set it block level */
+  display: block;
+  /* to keep aspect ratio, don't put height prop it will distort image */
+  object-fit: cover;
+}
+
+.btn {
+  cursor: pointer;
+  color: var(--white);
+  background: var(--primary-500);
+  border: transparent;
+  border-radius: var(--borderRadius);
+  letter-spacing: var(--letterSpacing);
+  padding: 0.375rem 0.75rem;
+  box-shadow: var(--shadow-1);
+  transition: var(--transition);
+  text-transform: capitalize;
+  display: inline-block;
+}
+.btn:hover {
+  background: var(--primary-700);
+  box-shadow: var(--shadow-3);
+}
+
+.btn-hipster {
+  color: var(--primary-500);
+  background: var(--primary-200);
+}
+.btn-hipster:hover {
+  color: var(--primary-200);
+  background: var(--primary-700);
+}
+
+.btn-block {
+  /* make button width same as form width */
+  width: 100%;
+}
+
+/* 2 alerts */
+.alert {
+  padding: 0.375rem 0.75rem;
+  margin-bottom: 1rem;
+  border-color: transparent;
+  border-radius: var(--borderRadius);
+}
+
+/* 3 */
+.alert-danger {
+  color: var(--red-dark);
+  background: var(--red-light);
+}
+
+/* 4 */
+.alert-success {
+  color: var(--green-dark);
+  background: var(--green-light);
+}
 ```
 
 <br>
 
 ### 399. Form Setup<a id="399"></a>
 
-In index.html
+In index.html, setup form
 
 ```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Default Starter</title>
+    <!-- normalize -->
+    <link rel="stylesheet" href="./normalize.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <h1>hello world</h1>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat dolorem
+      a ullam repudiandae! Voluptates dolorum ducimus, ipsa natus vel ratione.
+    </p>
 
-```
+    <h2>hello world</h2>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat dolorem
+      a ullam repudiandae! Voluptates dolorum ducimus, ipsa natus vel ratione.
+    </p>
 
----
+    <h1>hello world</h1>
+    <h2>hello world</h2>
+    <h3>hello world</h3>
+    <h4>hello world</h4>
+    <h5>hello world</h5>
 
-In main.css
+    <a href="#">link example</a>
 
-```css
+    <ul>
+      <li>First Item</li>
+      <li>Second Item</li>
+      <li>Third Item</li>
+    </ul>
 
+    <div class="container">
+      <img src="./computer.png" alt="computer" class="img" />
+    </div>
+
+    <br />
+
+    <button class="btn" type="button">regular button</button>
+    <button class="btn btn-hipster" type="button">hipster button</button>
+    <br />
+    <br />
+    <br />
+
+    <div class="alert alert-danger">hello from danger</div>
+    <div class="alert alert-success">hello from success</div>
+
+    <!-- 1 -->
+    <form class="form">
+      <h4>contact form</h4>
+
+      <div class="form-row">
+        <label for="name" class="form-label">Name</label>
+        <input
+          type="text"
+          placeholder="hello there"
+          id="name"
+          class="form-input"
+        />
+      </div>
+
+      <div class="form-row">
+        <label for="number" class="form-label">Number</label>
+        <input type="number" id="number" class="form-input" />
+      </div>
+
+      <div class="form-row">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" id="email" class="form-input" />
+        <small class="form-alert">please provide value</small>
+      </div>
+
+      <div class="form-row">
+        <label for="textarea" class="form-label">Textarea</label>
+        <textarea class="form-textarea">
+Default Value
+        </textarea>
+      </div>
+
+      <button type="submit" class="btn btn-block">submit</button>
+    </form>
+  </body>
+</html>
 ```
 
 <br>
 
 ### 400. Form CSS<a id="400"></a>
 
-In index.html
-
-```html
-
-```
-
----
-
 In main.css
 
 ```css
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
 
+@import url("https://fonts.googleapis.com/css?family=Poppins:400");
+
+html {
+  font-size: 100%;
+} /*16px*/
+
+:root {
+  /* primary */
+  /* colors */
+  --primary-100: #e2e0ff;
+  --primary-200: #c1beff;
+  --primary-300: #a29dff;
+  --primary-400: #837dff;
+  --primary-500: #645cff;
+  --primary-600: #504acc;
+  --primary-700: #3c3799;
+  --primary-800: #282566;
+  --primary-900: #141233;
+
+  /*  grey */
+  --grey-50: #f8fafc;
+  --grey-100: #f1f5f9;
+  --grey-200: #e2e8f0;
+  --grey-300: #cbd5e1;
+  --grey-400: #94a3b8;
+  --grey-500: #64748b;
+  --grey-600: #475569;
+  --grey-700: #334155;
+  --grey-800: #1e293b;
+  --grey-900: #0f172a;
+
+  --black: #222;
+  --white: #fff;
+  --red-light: #f8d7da;
+  --red-dark: #842029;
+  --green-light: #d1e7dd;
+  --green-dark: #0f5132;
+
+  /* fonts */
+  --headingFont: "Roboto", sans-serif;
+  --bodyFont: "Nunito", sans-serif;
+  --small-text: 0.875rem;
+  --extra-small-text: 0.7em;
+
+  /* App THEME: rest of the vars */
+  --backgroundColor: var(--grey-50);
+  --textColor: var(--grey-900);
+  /* 1. image   */
+  --borderRadius: 0.25rem;
+  /* 2.  */
+  --letterSpacing: 1px;
+  /* 3 hovering effect*/
+  --transition: 0.3s ease-in-out all;
+  /* 4 parent container max width */
+  --max-width: 1120px;
+  /* 5 form fixed width on big screen so it may look bigger*/
+  --fixed-width: 600px;
+
+  /* 6 box shadow from tail wind library*/
+  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+body {
+  background: var(--backgroundColor);
+  font-family: var(--bodyFont);
+  font-weight: 400;
+  line-height: 1.75;
+
+  color: var(--textColor);
+}
+
+p {
+  margin-bottom: 1.5rem;
+  max-width: 40em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  margin-bottom: 1.38rem;
+  font-family: var(--headingFont);
+  font-weight: 400;
+  line-height: 1.3;
+  text-transform: capitalize;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+small,
+.text_small {
+  font-size: var(--small-text);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.container {
+  width: 50vw;
+  border: 5px, solid var(--primary-500);
+  border-radius: var(--borderRadius);
+  max-width: var(--var-width);
+}
+
+.img {
+  /* the width will depend on parent */
+  width: 100%;
+  /* image by default are inline to override set it block level */
+  display: block;
+  /* to keep aspect ratio, don't put height prop it will distort image */
+  object-fit: cover;
+}
+
+.btn {
+  cursor: pointer;
+  color: var(--white);
+  background: var(--primary-500);
+  border: transparent;
+  border-radius: var(--borderRadius);
+  letter-spacing: var(--letterSpacing);
+  padding: 0.375rem 0.75rem;
+  box-shadow: var(--shadow-1);
+  transition: var(--transition);
+  text-transform: capitalize;
+  display: inline-block;
+}
+.btn:hover {
+  background: var(--primary-700);
+  box-shadow: var(--shadow-3);
+}
+
+.btn-hipster {
+  color: var(--primary-500);
+  background: var(--primary-200);
+}
+.btn-hipster:hover {
+  color: var(--primary-200);
+  background: var(--primary-700);
+}
+
+.btn-block {
+  /* make button width same as form width */
+  width: 100%;
+}
+
+/*  alerts */
+.alert {
+  padding: 0.375rem 0.75rem;
+  margin-bottom: 1rem;
+  border-color: transparent;
+  border-radius: var(--borderRadius);
+}
+
+.alert-danger {
+  color: var(--red-dark);
+  background: var(--red-light);
+}
+
+.alert-success {
+  color: var(--green-dark);
+  background: var(--green-light);
+}
+
+/* form */
+.form {
+  width: 90vw;
+  max-width: var(--fixed-width);
+  background: var(--white);
+  border-radius: var(--borderRadius);
+  box-shadow: var(--shadow-2);
+  padding: 2rem 2.5rem;
+  margin: 3rem auto;
+}
+.form-label {
+  display: block;
+  font-size: var(--small-text);
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  letter-spacing: var(--letterSpacing);
+}
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  border-radius: var(--borderRadius);
+  background: var(--backgroundColor);
+  border: 1px solid var(--grey-200);
+}
+
+.form-row {
+  margin-bottom: 1rem;
+}
+
+.form-textarea {
+  height: 7rem;
+}
+::placeholder {
+  font-family: inherit;
+  color: var(--grey-400);
+}
+.form-alert {
+  color: var(--red-dark);
+  letter-spacing: var(--letterSpacing);
+  text-transform: capitalize;
+}
 ```
 
 <br>
@@ -1015,7 +2355,100 @@ In main.css
 In index.html
 
 ```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Default Starter</title>
+    <!-- normalize -->
+    <link rel="stylesheet" href="./normalize.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <h1>hello world</h1>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat dolorem
+      a ullam repudiandae! Voluptates dolorum ducimus, ipsa natus vel ratione.
+    </p>
 
+    <h2>hello world</h2>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat dolorem
+      a ullam repudiandae! Voluptates dolorum ducimus, ipsa natus vel ratione.
+    </p>
+
+    <h1>hello world</h1>
+    <h2>hello world</h2>
+    <h3>hello world</h3>
+    <h4>hello world</h4>
+    <h5>hello world</h5>
+
+    <a href="#">link example</a>
+
+    <ul>
+      <li>First Item</li>
+      <li>Second Item</li>
+      <li>Third Item</li>
+    </ul>
+
+    <div class="container">
+      <img src="./computer.png" alt="computer" class="img" />
+    </div>
+
+    <br />
+
+    <button class="btn" type="button">regular button</button>
+    <button class="btn btn-hipster" type="button">hipster button</button>
+    <br />
+    <br />
+    <br />
+
+    <div class="alert alert-danger">hello from danger</div>
+    <div class="alert alert-success">hello from success</div>
+
+    <!-- 1 -->
+    <form class="form">
+      <h4>contact form</h4>
+
+      <div class="form-row">
+        <label for="name" class="form-label">Name</label>
+        <input
+          type="text"
+          placeholder="hello there"
+          id="name"
+          class="form-input"
+        />
+      </div>
+
+      <div class="form-row">
+        <label for="number" class="form-label">Number</label>
+        <input type="number" id="number" class="form-input" />
+      </div>
+
+      <div class="form-row">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" id="email" class="form-input" />
+        <small class="form-alert">please provide value</small>
+      </div>
+
+      <div class="form-row">
+        <label for="textarea" class="form-label">Textarea</label>
+        <textarea class="form-textarea">
+Default Value
+        </textarea>
+      </div>
+
+      <button type="submit" class="btn btn-block">submit</button>
+    </form>
+    <br />
+    <!-- 1 -->
+    <div class="loading"></div>
+    <br />
+  </body>
+</html>
 ```
 
 ---
@@ -1023,7 +2456,267 @@ In index.html
 In main.css
 
 ```css
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
 
+@import url("https://fonts.googleapis.com/css?family=Poppins:400");
+
+html {
+  font-size: 100%;
+} /*16px*/
+
+:root {
+  /* primary */
+  /* colors */
+  --primary-100: #e2e0ff;
+  --primary-200: #c1beff;
+  --primary-300: #a29dff;
+  --primary-400: #837dff;
+  --primary-500: #645cff;
+  --primary-600: #504acc;
+  --primary-700: #3c3799;
+  --primary-800: #282566;
+  --primary-900: #141233;
+
+  /*  grey */
+  --grey-50: #f8fafc;
+  --grey-100: #f1f5f9;
+  --grey-200: #e2e8f0;
+  --grey-300: #cbd5e1;
+  --grey-400: #94a3b8;
+  --grey-500: #64748b;
+  --grey-600: #475569;
+  --grey-700: #334155;
+  --grey-800: #1e293b;
+  --grey-900: #0f172a;
+
+  --black: #222;
+  --white: #fff;
+  --red-light: #f8d7da;
+  --red-dark: #842029;
+  --green-light: #d1e7dd;
+  --green-dark: #0f5132;
+
+  /* fonts */
+  --headingFont: "Roboto", sans-serif;
+  --bodyFont: "Nunito", sans-serif;
+  --small-text: 0.875rem;
+  --extra-small-text: 0.7em;
+
+  /* App THEME: rest of the vars */
+  --backgroundColor: var(--grey-50);
+  --textColor: var(--grey-900);
+  /* 1. image   */
+  --borderRadius: 0.25rem;
+  /* 2.  */
+  --letterSpacing: 1px;
+  /* 3 hovering effect*/
+  --transition: 0.3s ease-in-out all;
+  /* 4 parent container max width */
+  --max-width: 1120px;
+  /* 5 form fixed width on big screen so it may look bigger*/
+  --fixed-width: 600px;
+
+  /* 6 box shadow from tail wind library*/
+  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+body {
+  background: var(--backgroundColor);
+  font-family: var(--bodyFont);
+  font-weight: 400;
+  line-height: 1.75;
+
+  color: var(--textColor);
+}
+
+p {
+  margin-bottom: 1.5rem;
+  max-width: 40em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  margin-bottom: 1.38rem;
+  font-family: var(--headingFont);
+  font-weight: 400;
+  line-height: 1.3;
+  text-transform: capitalize;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+small,
+.text_small {
+  font-size: var(--small-text);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.container {
+  width: 50vw;
+  border: 5px, solid var(--primary-500);
+  border-radius: var(--borderRadius);
+  max-width: var(--var-width);
+}
+
+.img {
+  /* the width will depend on parent */
+  width: 100%;
+  /* image by default are inline to override set it block level */
+  display: block;
+  /* to keep aspect ratio, don't put height prop it will distort image */
+  object-fit: cover;
+}
+
+.btn {
+  cursor: pointer;
+  color: var(--white);
+  background: var(--primary-500);
+  border: transparent;
+  border-radius: var(--borderRadius);
+  letter-spacing: var(--letterSpacing);
+  padding: 0.375rem 0.75rem;
+  box-shadow: var(--shadow-1);
+  transition: var(--transition);
+  text-transform: capitalize;
+  display: inline-block;
+}
+.btn:hover {
+  background: var(--primary-700);
+  box-shadow: var(--shadow-3);
+}
+
+.btn-hipster {
+  color: var(--primary-500);
+  background: var(--primary-200);
+}
+.btn-hipster:hover {
+  color: var(--primary-200);
+  background: var(--primary-700);
+}
+
+.btn-block {
+  /* make button width same as form width */
+  width: 100%;
+}
+
+/*  alerts */
+.alert {
+  padding: 0.375rem 0.75rem;
+  margin-bottom: 1rem;
+  border-color: transparent;
+  border-radius: var(--borderRadius);
+}
+
+.alert-danger {
+  color: var(--red-dark);
+  background: var(--red-light);
+}
+
+.alert-success {
+  color: var(--green-dark);
+  background: var(--green-light);
+}
+
+/* form */
+.form {
+  width: 90vw;
+  max-width: var(--fixed-width);
+  background: var(--white);
+  border-radius: var(--borderRadius);
+  box-shadow: var(--shadow-2);
+  padding: 2rem 2.5rem;
+  margin: 3rem auto;
+}
+.form-label {
+  display: block;
+  font-size: var(--small-text);
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  letter-spacing: var(--letterSpacing);
+}
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  border-radius: var(--borderRadius);
+  background: var(--backgroundColor);
+  border: 1px solid var(--grey-200);
+}
+
+.form-row {
+  margin-bottom: 1rem;
+}
+
+.form-textarea {
+  height: 7rem;
+}
+::placeholder {
+  font-family: inherit;
+  color: var(--grey-400);
+}
+.form-alert {
+  color: var(--red-dark);
+  letter-spacing: var(--letterSpacing);
+  text-transform: capitalize;
+}
+
+/* 2 alert spinner */
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  width: 6rem;
+  height: 6rem;
+  border: 5px solid var(--grey-400);
+  border-radius: 50%;
+  border-top-color: var(--primary-500);
+  animation: spinner 0.6s linear infinite;
+}
+.loading {
+  margin: 0 auto;
+}
 ```
 
 <br>
@@ -1033,7 +2726,105 @@ In main.css
 In index.html
 
 ```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Default Starter</title>
+    <!-- normalize -->
+    <link rel="stylesheet" href="./normalize.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <h1>hello world</h1>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat dolorem
+      a ullam repudiandae! Voluptates dolorum ducimus, ipsa natus vel ratione.
+    </p>
 
+    <h2>hello world</h2>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat dolorem
+      a ullam repudiandae! Voluptates dolorum ducimus, ipsa natus vel ratione.
+    </p>
+
+    <h1>hello world</h1>
+    <h2>hello world</h2>
+    <h3>hello world</h3>
+    <h4>hello world</h4>
+    <h5>hello world</h5>
+
+    <a href="#">link example</a>
+
+    <ul>
+      <li>First Item</li>
+      <li>Second Item</li>
+      <li>Third Item</li>
+    </ul>
+
+    <div class="container">
+      <img src="./computer.png" alt="computer" class="img" />
+    </div>
+
+    <br />
+
+    <button class="btn" type="button">regular button</button>
+    <button class="btn btn-hipster" type="button">hipster button</button>
+    <br />
+    <br />
+    <br />
+
+    <div class="alert alert-danger">hello from danger</div>
+    <div class="alert alert-success">hello from success</div>
+
+    <!-- 1 -->
+    <form class="form">
+      <h4>contact form</h4>
+
+      <div class="form-row">
+        <label for="name" class="form-label">Name</label>
+        <input
+          type="text"
+          placeholder="hello there"
+          id="name"
+          class="form-input"
+        />
+      </div>
+
+      <div class="form-row">
+        <label for="number" class="form-label">Number</label>
+        <input type="number" id="number" class="form-input" />
+      </div>
+
+      <div class="form-row">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" id="email" class="form-input" />
+        <small class="form-alert">please provide value</small>
+      </div>
+
+      <div class="form-row">
+        <label for="textarea" class="form-label">Textarea</label>
+        <textarea class="form-textarea">
+Default Value
+        </textarea>
+      </div>
+
+      <button type="submit" class="btn btn-block">submit</button>
+    </form>
+    <br />
+    <div class="loading"></div>
+    <br />
+    <br />
+    <!-- 1 -->
+    <div class="title">
+      <h2>section title</h2>
+      <div class="title-underline"></div>
+    </div>
+  </body>
+</html>
 ```
 
 ---
@@ -1041,7 +2832,282 @@ In index.html
 In main.css
 
 ```css
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
 
+@import url("https://fonts.googleapis.com/css?family=Poppins:400");
+
+html {
+  font-size: 100%;
+} /*16px*/
+
+:root {
+  /* primary */
+  /* colors */
+  --primary-100: #e2e0ff;
+  --primary-200: #c1beff;
+  --primary-300: #a29dff;
+  --primary-400: #837dff;
+  --primary-500: #645cff;
+  --primary-600: #504acc;
+  --primary-700: #3c3799;
+  --primary-800: #282566;
+  --primary-900: #141233;
+
+  /*  grey */
+  --grey-50: #f8fafc;
+  --grey-100: #f1f5f9;
+  --grey-200: #e2e8f0;
+  --grey-300: #cbd5e1;
+  --grey-400: #94a3b8;
+  --grey-500: #64748b;
+  --grey-600: #475569;
+  --grey-700: #334155;
+  --grey-800: #1e293b;
+  --grey-900: #0f172a;
+
+  --black: #222;
+  --white: #fff;
+  --red-light: #f8d7da;
+  --red-dark: #842029;
+  --green-light: #d1e7dd;
+  --green-dark: #0f5132;
+
+  /* fonts */
+  --headingFont: "Roboto", sans-serif;
+  --bodyFont: "Nunito", sans-serif;
+  --small-text: 0.875rem;
+  --extra-small-text: 0.7em;
+
+  /* App THEME: rest of the vars */
+  --backgroundColor: var(--grey-50);
+  --textColor: var(--grey-900);
+  /* 1. image   */
+  --borderRadius: 0.25rem;
+  /* 2.  */
+  --letterSpacing: 1px;
+  /* 3 hovering effect*/
+  --transition: 0.3s ease-in-out all;
+  /* 4 parent container max width */
+  --max-width: 1120px;
+  /* 5 form fixed width on big screen so it may look bigger*/
+  --fixed-width: 600px;
+
+  /* 6 box shadow from tail wind library*/
+  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+body {
+  background: var(--backgroundColor);
+  font-family: var(--bodyFont);
+  font-weight: 400;
+  line-height: 1.75;
+
+  color: var(--textColor);
+}
+
+p {
+  margin-bottom: 1.5rem;
+  max-width: 40em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  margin-bottom: 1.38rem;
+  font-family: var(--headingFont);
+  font-weight: 400;
+  line-height: 1.3;
+  text-transform: capitalize;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+small,
+.text_small {
+  font-size: var(--small-text);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.container {
+  width: 50vw;
+  border: 5px, solid var(--primary-500);
+  border-radius: var(--borderRadius);
+  max-width: var(--var-width);
+}
+
+.img {
+  /* the width will depend on parent */
+  width: 100%;
+  /* image by default are inline to override set it block level */
+  display: block;
+  /* to keep aspect ratio, don't put height prop it will distort image */
+  object-fit: cover;
+}
+
+.btn {
+  cursor: pointer;
+  color: var(--white);
+  background: var(--primary-500);
+  border: transparent;
+  border-radius: var(--borderRadius);
+  letter-spacing: var(--letterSpacing);
+  padding: 0.375rem 0.75rem;
+  box-shadow: var(--shadow-1);
+  transition: var(--transition);
+  text-transform: capitalize;
+  display: inline-block;
+}
+.btn:hover {
+  background: var(--primary-700);
+  box-shadow: var(--shadow-3);
+}
+
+.btn-hipster {
+  color: var(--primary-500);
+  background: var(--primary-200);
+}
+.btn-hipster:hover {
+  color: var(--primary-200);
+  background: var(--primary-700);
+}
+
+.btn-block {
+  /* make button width same as form width */
+  width: 100%;
+}
+
+/*  alerts */
+.alert {
+  padding: 0.375rem 0.75rem;
+  margin-bottom: 1rem;
+  border-color: transparent;
+  border-radius: var(--borderRadius);
+}
+
+.alert-danger {
+  color: var(--red-dark);
+  background: var(--red-light);
+}
+
+.alert-success {
+  color: var(--green-dark);
+  background: var(--green-light);
+}
+
+/* form */
+.form {
+  width: 90vw;
+  max-width: var(--fixed-width);
+  background: var(--white);
+  border-radius: var(--borderRadius);
+  box-shadow: var(--shadow-2);
+  padding: 2rem 2.5rem;
+  margin: 3rem auto;
+}
+.form-label {
+  display: block;
+  font-size: var(--small-text);
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  letter-spacing: var(--letterSpacing);
+}
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  border-radius: var(--borderRadius);
+  background: var(--backgroundColor);
+  border: 1px solid var(--grey-200);
+}
+
+.form-row {
+  margin-bottom: 1rem;
+}
+
+.form-textarea {
+  height: 7rem;
+}
+::placeholder {
+  font-family: inherit;
+  color: var(--grey-400);
+}
+.form-alert {
+  color: var(--red-dark);
+  letter-spacing: var(--letterSpacing);
+  text-transform: capitalize;
+}
+
+/* alert spinner */
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  width: 6rem;
+  height: 6rem;
+  border: 5px solid var(--grey-400);
+  border-radius: 50%;
+  border-top-color: var(--primary-500);
+  animation: spinner 0.6s linear infinite;
+}
+.loading {
+  margin: 0 auto;
+}
+
+/*  2 title */
+
+.title {
+  text-align: center;
+}
+
+.title-underline {
+  background: var(--primary-500);
+  width: 7rem;
+  height: 0.25rem;
+  /* put line i.e margine in botton below heading */
+  margin: 0 auto;
+  margin-top: -1rem;
+}
 ```
 
 <br>
