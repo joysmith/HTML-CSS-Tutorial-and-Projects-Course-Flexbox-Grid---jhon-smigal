@@ -9,9 +9,13 @@
 | 390. [Fonts - Overview and Tweaks](#390) | 400. [Form CSS](#400)         |
 | 391. [Colors - General Setup](#391)      | 401. [Loading](#401)          |
 | 392. [Primary Shades](#392)              | 402. [Title](#402)            |
-| 393. [Gray Shades](#393)                 |
+| 393. [Gray Shades](#393)                 | 403. [Extra](#403)            |
 
 ### 384. Intro<a id="384"></a>
+
+> **_Business Objective: Layout_**
+
+<img src="notes/app.png" width="500">
 
 <br>
 
@@ -2928,6 +2932,7 @@ h5 {
   font-weight: 400;
   line-height: 1.3;
   text-transform: capitalize;
+  letter-spacing: var(--letterSpacing);
 }
 
 h1 {
@@ -3095,6 +3100,408 @@ ul {
 }
 
 /*  2 title */
+
+.title {
+  text-align: center;
+}
+
+.title-underline {
+  background: var(--primary-500);
+  width: 7rem;
+  height: 0.25rem;
+  /* put line i.e margine in botton below heading */
+  margin: 0 auto;
+  margin-top: -1rem;
+}
+```
+
+<br>
+
+### 384. Intro<a id="403"></a>
+
+In index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Default Starter</title>
+    <!-- normalize -->
+    <link rel="stylesheet" href="./normalize.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./main.css" />
+    <!-- 1 add style -->
+    <style>
+      body {
+        padding: 2rem;
+      }
+      .img {
+        width: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>hello world</h1>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat dolorem
+      a ullam repudiandae! Voluptates dolorum ducimus, ipsa natus vel ratione.
+    </p>
+
+    <h2>hello world</h2>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat dolorem
+      a ullam repudiandae! Voluptates dolorum ducimus, ipsa natus vel ratione.
+    </p>
+
+    <h1>hello world</h1>
+    <h2>hello world</h2>
+    <h3>hello world</h3>
+    <h4>hello world</h4>
+    <h5>hello world</h5>
+
+    <a href="#">link example</a>
+
+    <ul>
+      <li>First Item</li>
+      <li>Second Item</li>
+      <li>Third Item</li>
+    </ul>
+
+    <div class="container">
+      <img src="./computer.png" alt="computer" class="img" />
+    </div>
+
+    <br />
+
+    <button class="btn" type="button">regular button</button>
+    <button class="btn btn-hipster" type="button">hipster button</button>
+    <br />
+    <br />
+    <br />
+
+    <div class="alert alert-danger">hello from danger</div>
+    <div class="alert alert-success">hello from success</div>
+
+    <!-- 1 -->
+    <form class="form">
+      <h4>contact form</h4>
+
+      <div class="form-row">
+        <label for="name" class="form-label">Name</label>
+        <input
+          type="text"
+          placeholder="hello there"
+          id="name"
+          class="form-input"
+        />
+      </div>
+
+      <div class="form-row">
+        <label for="number" class="form-label">Number</label>
+        <input type="number" id="number" class="form-input" />
+      </div>
+
+      <div class="form-row">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" id="email" class="form-input" />
+        <small class="form-alert">please provide value</small>
+      </div>
+
+      <div class="form-row">
+        <label for="textarea" class="form-label">Textarea</label>
+        <textarea class="form-textarea">
+Default Value
+        </textarea>
+      </div>
+
+      <button type="submit" class="btn btn-block">submit</button>
+    </form>
+    <br />
+    <div class="loading"></div>
+    <br />
+    <br />
+    <!-- 1 -->
+    <div class="title">
+      <h2>section title</h2>
+      <div class="title-underline"></div>
+    </div>
+  </body>
+</html>
+```
+
+---
+
+In main.css
+
+```css
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:400");
+
+html {
+  font-size: 100%;
+} /*16px*/
+
+:root {
+  /* primary */
+  /* colors */
+  --primary-100: #e2e0ff;
+  --primary-200: #c1beff;
+  --primary-300: #a29dff;
+  --primary-400: #837dff;
+  --primary-500: #645cff;
+  --primary-600: #504acc;
+  --primary-700: #3c3799;
+  --primary-800: #282566;
+  --primary-900: #141233;
+
+  /*  grey */
+  --grey-50: #f8fafc;
+  --grey-100: #f1f5f9;
+  --grey-200: #e2e8f0;
+  --grey-300: #cbd5e1;
+  --grey-400: #94a3b8;
+  --grey-500: #64748b;
+  --grey-600: #475569;
+  --grey-700: #334155;
+  --grey-800: #1e293b;
+  --grey-900: #0f172a;
+
+  --black: #222;
+  --white: #fff;
+  --red-light: #f8d7da;
+  --red-dark: #842029;
+  --green-light: #d1e7dd;
+  --green-dark: #0f5132;
+
+  /* fonts */
+  --headingFont: "Roboto", sans-serif;
+  --bodyFont: "Nunito", sans-serif;
+  --small-text: 0.875rem;
+  --extra-small-text: 0.7em;
+
+  /* App THEME: rest of the vars */
+  --backgroundColor: var(--grey-50);
+  --textColor: var(--grey-900);
+  /*  image   */
+  --borderRadius: 0.25rem;
+  /*   */
+  --letterSpacing: 1px;
+  /*  hovering effect*/
+  --transition: 0.3s ease-in-out all;
+  /*  parent container max width */
+  --max-width: 1120px;
+  /*  form fixed width on big screen so it may look bigger*/
+  --fixed-width: 600px;
+
+  /*  box shadow from tail wind library*/
+  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+body {
+  background: var(--backgroundColor);
+  font-family: var(--bodyFont);
+  font-weight: 400;
+  line-height: 1.75;
+
+  color: var(--textColor);
+}
+
+p {
+  margin-bottom: 1.5rem;
+  max-width: 40em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  margin-bottom: 1.38rem;
+  font-family: var(--headingFont);
+  font-weight: 400;
+  line-height: 1.3;
+  text-transform: capitalize;
+  letter-spacing: var(--letterSpacing);
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+small,
+.text_small {
+  font-size: var(--small-text);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* 2 remove container */
+/* .container {
+  width: 50vw;
+  border: 5px, solid var(--primary-500);
+  border-radius: var(--borderRadius);
+  max-width: var(--var-width);
+} */
+
+.img {
+  /* the width will depend on parent */
+  width: 100%;
+  /* image by default are inline to override set it block level */
+  display: block;
+  /* to keep aspect ratio, don't put height prop it will distort image */
+  object-fit: cover;
+}
+
+.btn {
+  cursor: pointer;
+  color: var(--white);
+  background: var(--primary-500);
+  border: transparent;
+  border-radius: var(--borderRadius);
+  letter-spacing: var(--letterSpacing);
+  padding: 0.375rem 0.75rem;
+  box-shadow: var(--shadow-1);
+  transition: var(--transition);
+  text-transform: capitalize;
+  display: inline-block;
+}
+.btn:hover {
+  background: var(--primary-700);
+  box-shadow: var(--shadow-3);
+}
+
+.btn-hipster {
+  color: var(--primary-500);
+  background: var(--primary-200);
+}
+.btn-hipster:hover {
+  color: var(--primary-200);
+  background: var(--primary-700);
+}
+
+.btn-block {
+  /* make button width same as form width */
+  width: 100%;
+}
+
+/*  alerts */
+.alert {
+  padding: 0.375rem 0.75rem;
+  margin-bottom: 1rem;
+  border-color: transparent;
+  border-radius: var(--borderRadius);
+}
+
+.alert-danger {
+  color: var(--red-dark);
+  background: var(--red-light);
+}
+
+.alert-success {
+  color: var(--green-dark);
+  background: var(--green-light);
+}
+
+/* form */
+.form {
+  width: 90vw;
+  max-width: var(--fixed-width);
+  background: var(--white);
+  border-radius: var(--borderRadius);
+  box-shadow: var(--shadow-2);
+  padding: 2rem 2.5rem;
+  margin: 3rem auto;
+}
+.form-label {
+  display: block;
+  font-size: var(--small-text);
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  letter-spacing: var(--letterSpacing);
+}
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  border-radius: var(--borderRadius);
+  background: var(--backgroundColor);
+  border: 1px solid var(--grey-200);
+}
+
+.form-row {
+  margin-bottom: 1rem;
+}
+
+.form-textarea {
+  height: 7rem;
+}
+::placeholder {
+  font-family: inherit;
+  color: var(--grey-400);
+}
+.form-alert {
+  color: var(--red-dark);
+  letter-spacing: var(--letterSpacing);
+  text-transform: capitalize;
+}
+
+/* alert spinner */
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  width: 6rem;
+  height: 6rem;
+  border: 5px solid var(--grey-400);
+  border-radius: 50%;
+  border-top-color: var(--primary-500);
+  animation: spinner 0.6s linear infinite;
+}
+.loading {
+  margin: 0 auto;
+}
+
+/* title */
 
 .title {
   text-align: center;
