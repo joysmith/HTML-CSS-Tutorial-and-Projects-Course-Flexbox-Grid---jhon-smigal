@@ -25,6 +25,12 @@
 
 ### 386. Structure<a id="386"></a>
 
+> **_Business Objective: Layout_**
+
+<img src="notes/structure.png" width="500">
+
+---
+
 - create index.html, main.css
 
 In index.html
@@ -66,6 +72,8 @@ body {
 > **_Business Objective: Layout_**
 
 <img src="notes/simpleelement.png" width="500">
+
+---
 
 In index.html
 
@@ -125,8 +133,6 @@ body {
 
 ### 388. Normalize<a id="388"></a>
 
-## Normalize
-
 Small CSS file that provides cross-browser consistency in the default styling of HTML elements.
 
 Alternative/Fancier way of doing this
@@ -154,7 +160,7 @@ Alternative/Fancier way of doing this
 
 - create a new file normalize.css
 
-In normalize.css, copy code from jhon notes
+In normalize.css, copy code from john notes
 
 ```css
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -522,7 +528,7 @@ In index.html, add normalize css before main.css
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Default Starter</title>
-    <!-- 🟢 normalize -->
+    <!-- 1️⃣ normalize -->
     <link rel="stylesheet" href="./normalize.css" />
     <!-- main css -->
     <link rel="stylesheet" href="./main.css" />
@@ -574,11 +580,14 @@ Make some adjustments
 
 ---
 
-- go to [typescale](https://type-scale.com/) click "Grab the css", copy all and paste in main.css
+<img src="notes/font.png" width="500">
+
+- go to [typescale](https://type-scale.com/) click "Grab the css", copy all the style and replace with in main.css
 
 In main.css
 
 ```css
+/* Paste style from typescale */
 @import url("https://fonts.googleapis.com/css?family=Poppins:400");
 
 html {
@@ -762,6 +771,8 @@ In main.css
   --green-dark: #0f5132;
 }
 ```
+
+---
 
 In main.css, copy color from john notes
 
@@ -989,11 +1000,11 @@ Library/Faster Approach
 - [bootstrap](https://getbootstrap.com/docs/5.0/customize/color/#color-sass-maps)
 - [tailwind](https://tailwindcss.com/docs/customizing-colors#color-palette-reference)
 
-##### Select Grey
+##### Select Grey from tailwind and setup like following structure
 
 - [tailwind](https://tailwindcss.com/docs/customizing-colors#color-palette-reference)
 
-In main.css
+In main.css, write grey shades and tweak value
 
 ```css
 *,
@@ -1021,7 +1032,7 @@ html {
   --primary-800: #282566;
   --primary-900: #141233;
 
-  /* 1. grey */
+  /* grey */
   --grey-50: #f8fafc;
   --grey-100: #f1f5f9;
   --grey-200: #e2e8f0;
@@ -1122,7 +1133,7 @@ ul {
 ### 394. Happy Hues<a id="394"></a>
 
 - Go to [happyheus](https://www.happyhues.co/) for smaller project this site give information on where to use which color
-- when I'm working on project where I Don't need shades
+- when I'm working on project where I Don't need lots of shades
 
 <br>
 
@@ -1268,6 +1279,7 @@ ul {
 ---
 
 How to extract shadow from tailwind library and structure it ref step 6
+
 <img src="notes/tailwindshadow.png" width="500">
 
 <br>
@@ -1383,18 +1395,18 @@ html {
   /* App THEME: rest of the vars */
   --backgroundColor: var(--grey-50);
   --textColor: var(--grey-900);
-  /* 1. image   */
+  /* image   */
   --borderRadius: 0.25rem;
-  /* 2.  */
+  /*  */
   --letterSpacing: 1px;
-  /* 3 hovering effect*/
+  /* hovering effect*/
   --transition: 0.3s ease-in-out all;
-  /* 4 parent container max width */
+  /* parent container max width */
   --max-width: 1120px;
-  /* 5 form fixed width on big screen so it may look bigger*/
+  /* form fixed width on big screen so it may look bigger*/
   --fixed-width: 600px;
 
-  /* 6 box shadow from tail wind library*/
+  /* box shadow from tail wind library*/
   --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
@@ -1463,6 +1475,7 @@ ul {
   padding: 0;
 }
 
+/* 3 */
 .container {
   width: 50vw;
   border: 5px, solid var(--primary-500);
@@ -1600,18 +1613,18 @@ html {
   /* App THEME: rest of the vars */
   --backgroundColor: var(--grey-50);
   --textColor: var(--grey-900);
-  /* 1. image   */
+  /*  image   */
   --borderRadius: 0.25rem;
-  /* 2.  */
+  /*   */
   --letterSpacing: 1px;
-  /* 3 hovering effect*/
+  /* hovering transition effect*/
   --transition: 0.3s ease-in-out all;
-  /* 4 parent container max width */
+  /* parent container max width */
   --max-width: 1120px;
-  /* 5 form fixed width on big screen so it may look bigger*/
+  /* form fixed width on big screen so it may not look bigger*/
   --fixed-width: 600px;
 
-  /* 6 box shadow from tail wind library*/
+  /* box shadow from tail wind library*/
   --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
@@ -1854,18 +1867,18 @@ html {
   /* App THEME: rest of the vars */
   --backgroundColor: var(--grey-50);
   --textColor: var(--grey-900);
-  /* 1. image   */
+  /* image   */
   --borderRadius: 0.25rem;
-  /* 2.  */
+  /*  */
   --letterSpacing: 1px;
-  /* 3 hovering effect*/
+  /* hovering effect*/
   --transition: 0.3s ease-in-out all;
-  /* 4 parent container max width */
+  /* parent container max width */
   --max-width: 1120px;
-  /* 5 form fixed width on big screen so it may look bigger*/
+  /* form fixed width on big screen so it may look bigger*/
   --fixed-width: 600px;
 
-  /* 6 box shadow from tail wind library*/
+  /* box shadow from tail wind library*/
   --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
@@ -2162,18 +2175,18 @@ html {
   /* App THEME: rest of the vars */
   --backgroundColor: var(--grey-50);
   --textColor: var(--grey-900);
-  /* 1. image   */
+  /* image   */
   --borderRadius: 0.25rem;
-  /* 2.  */
+  /*  */
   --letterSpacing: 1px;
-  /* 3 hovering effect*/
+  /*  hovering effect*/
   --transition: 0.3s ease-in-out all;
-  /* 4 parent container max width */
+  /*  parent container max width */
   --max-width: 1120px;
-  /* 5 form fixed width on big screen so it may look bigger*/
+  /*  form fixed width on big screen so it may look bigger*/
   --fixed-width: 600px;
 
-  /* 6 box shadow from tail wind library*/
+  /*  box shadow from tail wind library*/
   --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
@@ -2513,15 +2526,15 @@ html {
   /* App THEME: rest of the vars */
   --backgroundColor: var(--grey-50);
   --textColor: var(--grey-900);
-  /* 1. image   */
+  /* image   */
   --borderRadius: 0.25rem;
-  /* 2.  */
+  /*  */
   --letterSpacing: 1px;
-  /* 3 hovering effect*/
+  /*  hovering effect*/
   --transition: 0.3s ease-in-out all;
-  /* 4 parent container max width */
+  /* parent container max width */
   --max-width: 1120px;
-  /* 5 form fixed width on big screen so it may look bigger*/
+  /* form fixed width on big screen so it may look bigger*/
   --fixed-width: 600px;
 
   /* 6 box shadow from tail wind library*/
@@ -2889,18 +2902,18 @@ html {
   /* App THEME: rest of the vars */
   --backgroundColor: var(--grey-50);
   --textColor: var(--grey-900);
-  /* 1. image   */
+  /* image   */
   --borderRadius: 0.25rem;
-  /* 2.  */
+  /*  */
   --letterSpacing: 1px;
-  /* 3 hovering effect*/
+  /* hovering effect*/
   --transition: 0.3s ease-in-out all;
-  /* 4 parent container max width */
+  /* parent container max width */
   --max-width: 1120px;
-  /* 5 form fixed width on big screen so it may look bigger*/
+  /* form fixed width on big screen so it may look bigger*/
   --fixed-width: 600px;
 
-  /* 6 box shadow from tail wind library*/
+  /* box shadow from tail wind library*/
   --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
