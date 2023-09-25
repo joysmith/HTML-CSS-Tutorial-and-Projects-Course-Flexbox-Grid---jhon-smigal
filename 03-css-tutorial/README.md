@@ -17,10 +17,6 @@
 
 ### 53. CSS Intro<a id="53"></a>
 
-> **_Business Objective: Layout_**
-
-<img src="notes/app.png" width="400">
-
 | Technology    | Description     |
 | ------------- | --------------- |
 | `Language`    | html, css       |
@@ -37,7 +33,7 @@
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.png" width="400">
+<img src="notes/app.png" >
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -55,7 +51,7 @@
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.png" width="400">
+<img src="notes/app.png" >
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -71,27 +67,13 @@
 
 ### 56. Video Resources<a id="56"></a>
 
-> **_Business Objective: Layout_**
-
-<img src="notes/app.png" width="400">
-
-| Technology    | Description     |
-| ------------- | --------------- |
-| `Language`    | html, css       |
-| `Framework`   | -               |
-| `Library`     | -               |
-| `Text editor` | Vs code         |
-| `Browser`     | chrome, firefox |
-
----
-
 <br>
 
 ### 57. Inline CSS<a id="57"></a>
 
 > **_Business Objective: Layout_**
 
-<img src="notes/57.png" width="400">
+<img src="notes/57.png" >
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -130,7 +112,7 @@
 
 > **_Business Objective: Layout_**
 
-<img src="notes/58.png" width="400">
+<img src="notes/58.png" >
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -184,7 +166,7 @@
 
 > **_Business Objective: Layout_**
 
-<img src="notes/59.png" width="400">
+<img src="notes/59.png" >
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -274,7 +256,7 @@ h2 {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/60.png" width="400">
+<img src="notes/60.png" >
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -345,7 +327,7 @@ h2 {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/61.png" width="400">
+<img src="notes/61.png" >
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -403,7 +385,7 @@ h2 {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/62.png" width="400">
+<img src="notes/62.png" >
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -467,7 +449,7 @@ p {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/63.png" width="400">
+<img src="notes/63.png" >
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -525,7 +507,7 @@ p {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/64.png" width="400">
+<img src="notes/64.png" >
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -583,7 +565,7 @@ p {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/65.png" width="400">
+<img src="notes/65.png" >
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -640,7 +622,7 @@ p {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/66.png" width="400">
+<img src="notes/66.png" >
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -706,7 +688,7 @@ p {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/67.png" width="400">
+<img src="notes/67.png" >
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -789,7 +771,7 @@ span {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/68.png" width="400">
+<img src="notes/68.png" >
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -869,7 +851,7 @@ div {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/69.png" width="400">
+<img src="notes/69.png" >
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -952,7 +934,7 @@ div {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/70.png" width="400">
+<img src="notes/70.png" >
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -1029,7 +1011,7 @@ p {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/71.png" width="400">
+<img src="notes/71.png" >
 
 | Technology    | Description     |
 | ------------- | --------------- |
