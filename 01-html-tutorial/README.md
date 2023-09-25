@@ -25,10 +25,6 @@
 
 ### 4. HTML Intro<a id="4"></a>
 
-> **_Business Objective: Layout_**
-
-<img src="notes/app.png" width="400">
-
 | Technology    | Description |
 | ------------- | ----------- |
 | `Language`    | html, css   |
@@ -41,10 +37,6 @@
 <br>
 
 ### 5. Google Chrome and Visual Studio Code<a id="5"></a>
-
-> **_Business Objective: Layout_**
-
-<img src="notes/app.png" width="400">
 
 | Technology    | Description |
 | ------------- | ----------- |
@@ -59,52 +51,17 @@
 
 ### 6. Download Google Chrome<a id="6"></a>
 
-> **_Business Objective: Layout_**
-
-<img src="notes/app.png" width="400">
-
-| Technology    | Description |
-| ------------- | ----------- |
-| `Language`    | html, css   |
-| `Framework`   | -           |
-| `Library`     | -           |
-| `Text editor` | Vs code     |
-
----
+- [Download chrome](https://www.google.com/intl/en_in/chrome/)
 
 <br>
 
 ### 7. Download Visual Studio Code<a id="7"></a>
 
-> **_Business Objective: Layout_**
-
-<img src="notes/app.png" width="400">
-
-| Technology    | Description |
-| ------------- | ----------- |
-| `Language`    | html, css   |
-| `Framework`   | -           |
-| `Library`     | -           |
-| `Text editor` | Vs code     |
-
----
+- [Download vs code](https://code.visualstudio.com/download)
 
 <br>
 
 ### 8. Visual Studio Code Overview<a id="8"></a>
-
-> **_Business Objective: Layout_**
-
-<img src="notes/app.png" width="400">
-
-| Technology    | Description |
-| ------------- | ----------- |
-| `Language`    | html, css   |
-| `Framework`   | -           |
-| `Library`     | -           |
-| `Text editor` | Vs code     |
-
----
 
 <br>
 
@@ -112,7 +69,7 @@
 
 > **_Business Objective: Layout_**
 
-<img src="notes/09.png" width="400">
+<img src="notes/09.png" >
 
 | Technology    | Description |
 | ------------- | ----------- |
@@ -129,7 +86,7 @@
 
 > **_Business Objective: Layout_**
 
-<img src="notes/10.png" width="400">
+<img src="notes/10.png" >
 
 | Technology    | Description |
 | ------------- | ----------- |
@@ -146,7 +103,7 @@
 
 > **_Business Objective: Layout_**
 
-<img src="notes/11.png" width="400">
+<img src="notes/11.png" >
 
 | Technology    | Description |
 | ------------- | ----------- |
@@ -163,7 +120,7 @@
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.png" width="400">
+<img src="notes/app.png" >
 
 | Technology    | Description |
 | ------------- | ----------- |
@@ -178,35 +135,11 @@
 
 ### 13. Live Server Extension Setup<a id="13"></a>
 
-> **_Business Objective: Layout_**
-
-<img src="notes/app.png" width="400">
-
-| Technology    | Description |
-| ------------- | ----------- |
-| `Language`    | html, css   |
-| `Framework`   | -           |
-| `Library`     | -           |
-| `Text editor` | Vs code     |
-
----
+- Live server by ritwick dey
 
 <br>
 
 ### 14. Extra Settings and Emmet<a id="14"></a>
-
-> **_Business Objective: Layout_**
-
-<img src="notes/app.png" width="400">
-
-| Technology    | Description |
-| ------------- | ----------- |
-| `Language`    | html, css   |
-| `Framework`   | -           |
-| `Library`     | -           |
-| `Text editor` | Vs code     |
-
----
 
 <br>
 
@@ -225,7 +158,9 @@
 
 ---
 
-- In index.html
+<br>
+
+In index.html
 
 ```html
 <!DOCTYPE html>
@@ -237,6 +172,7 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- How to use heading element -->
     <h1>hello i'm heading one</h1>
     <h2>hello i'm heading two</h2>
     <h3>hello i'm heading three</h3>
@@ -251,9 +187,13 @@
 
 ### 16. Video Resources<a id="16"></a>
 
+<br>
+
+### 17. Paragraph Element<a id="17"></a>
+
 > **_Business Objective: Layout_**
 
-<img src="notes/app.png" width="400">
+<img src="notes/17 paragraph.png" >
 
 | Technology    | Description |
 | ------------- | ----------- |
@@ -266,22 +206,7 @@
 
 <br>
 
-### 17. Paragraph Element<a id="17"></a>
-
-> **_Business Objective: Layout_**
-
-<img src="notes/17 paragraph.png" width="400">
-
-| Technology    | Description |
-| ------------- | ----------- |
-| `Language`    | html, css   |
-| `Framework`   | -           |
-| `Library`     | -           |
-| `Text editor` | Vs code     |
-
----
-
-- In index.html
+In index.html
 
 ```html
 <!DOCTYPE html>
@@ -293,6 +218,7 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- How to use paragraph element -->
     <p>
       some kinda of text
       akdfjlaksdjflasdjflkasdjflaksdfjalsdkfjasdlkjfalksdfjalskfjsdlkafjsldkafj
@@ -326,7 +252,7 @@
 
 > **_Business Objective: Layout_**
 
-<img src="notes/19 lorem.png" width="400">
+<img src="notes/19 lorem.png" >
 
 | Technology    | Description |
 | ------------- | ----------- |
@@ -349,6 +275,7 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- How to generate lorem: lorem50 -->
     <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus similique
       beatae sed eveniet at. Vero itaque fugiat repudiandae culpa atque
@@ -415,7 +342,7 @@
 
 > **_Business Objective: Layout_**
 
-<img src="notes/20 imagebasic.png" width="400">
+<img src="notes/20 imagebasic.png" >
 
 | Technology    | Description |
 | ------------- | ----------- |
@@ -452,7 +379,7 @@
 
 > **_Business Objective: Layout_**
 
-<img src="notes/22.png" width="400">
+<img src="notes/21multipleimages.png" >
 
 | Technology    | Description |
 | ------------- | ----------- |
@@ -488,7 +415,7 @@
 
 > **_Business Objective: Layout_**
 
-<img src="notes/22.png" width="400">
+<img src="notes/22 externalimages.png" >
 
 | Technology    | Description |
 | ------------- | ----------- |
@@ -532,7 +459,7 @@
 
 > **_Business Objective: Layout_**
 
-<img src="notes/23.png" width="400">
+<img src="notes/23.png" >
 
 | Technology    | Description |
 | ------------- | ----------- |
@@ -555,7 +482,7 @@
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.png" width="400">
+<img src="notes/24 widthheight.png" >
 
 | Technology    | Description |
 | ------------- | ----------- |
@@ -599,7 +526,7 @@
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.png" width="400">
+<img src="notes/25 cropimages.png" >
 
 | Technology    | Description |
 | ------------- | ----------- |
@@ -637,7 +564,7 @@
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.png" width="400">
+<img src="notes/26 commentsandlinebreak.png" >
 
 | Technology    | Description |
 | ------------- | ----------- |
@@ -686,7 +613,7 @@
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.png" width="400">
+<img src="notes/app.png" >
 
 | Technology    | Description |
 | ------------- | ----------- |
@@ -727,7 +654,7 @@
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.png" width="400">
+<img src="notes/app.png" >
 
 | Technology    | Description |
 | ------------- | ----------- |
@@ -797,7 +724,7 @@
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.png" width="400">
+<img src="notes/29.png" >
 
 | Technology    | Description |
 | ------------- | ----------- |
@@ -901,7 +828,7 @@
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.png" width="400">
+<img src="notes/30.png" >
 
 | Technology    | Description |
 | ------------- | ----------- |
@@ -1011,7 +938,7 @@
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.png" width="400">
+<img src="notes/31.png" >
 
 | Technology    | Description |
 | ------------- | ----------- |
@@ -1046,7 +973,7 @@
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.png" width="400">
+<img src="notes/32.png" >
 
 | Technology    | Description |
 | ------------- | ----------- |
@@ -1086,7 +1013,7 @@
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.png" width="400">
+<img src="notes/33.png" >
 
 | Technology    | Description |
 | ------------- | ----------- |
@@ -1121,7 +1048,7 @@
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.png" width="400">
+<img src="notes/34.png" >
 
 | Technology    | Description |
 | ------------- | ----------- |
@@ -1191,7 +1118,7 @@
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.png" width="400">
+<img src="notes/35.png" >
 
 | Technology    | Description |
 | ------------- | ----------- |
@@ -1230,7 +1157,7 @@
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.png" width="400">
+<img src="notes/36.png" >
 
 | Technology    | Description |
 | ------------- | ----------- |
@@ -1277,7 +1204,7 @@
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.png" width="400">
+<img src="notes/37.png" >
 
 | Technology    | Description |
 | ------------- | ----------- |
@@ -1326,7 +1253,7 @@
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.png" width="400">
+<img src="notes/38.png" >
 
 | Technology    | Description |
 | ------------- | ----------- |
@@ -1380,7 +1307,7 @@
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.png" width="400">
+<img src="notes/39.png" >
 
 | Technology    | Description |
 | ------------- | ----------- |
@@ -1490,7 +1417,7 @@
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.png" width="400">
+<img src="notes/app.png" >
 
 | Technology    | Description |
 | ------------- | ----------- |
@@ -1513,7 +1440,7 @@
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.png" width="400">
+<img src="notes/app.png" >
 
 | Technology    | Description |
 | ------------- | ----------- |
@@ -1536,7 +1463,7 @@
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.png" width="400">
+<img src="notes/app.png" >
 
 | Technology    | Description |
 | ------------- | ----------- |
