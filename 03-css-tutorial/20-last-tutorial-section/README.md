@@ -38,7 +38,7 @@
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.gif" width="400">
+<img src="notes/app.png" width="400">
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -54,7 +54,7 @@
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.gif" width="400">
+<img src="notes/1.png" width="400">
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -169,7 +169,7 @@ h3 {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.gif" width="400">
+<img src="notes/app.png" width="400">
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -230,7 +230,7 @@ h3 {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.gif" width="400">
+<img src="notes/2.png" width="400">
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -298,7 +298,7 @@ h3 {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.gif" width="400">
+<img src="notes/3.png" width="400">
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -372,7 +372,7 @@ h3 {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.gif" width="400">
+<img src="notes/4.png" width="400">
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -404,7 +404,7 @@ h3 {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.gif" width="400">
+<img src="notes/5.png" width="400">
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -471,7 +471,7 @@ h3 {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.gif" width="400">
+<img src="notes/6.png" width="400">
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -533,7 +533,7 @@ h1 {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.gif" width="400">
+<img src="notes/app.png" width="400">
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -565,7 +565,7 @@ h1 {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.gif" width="400">
+<img src="notes/app.png" width="400">
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -597,7 +597,7 @@ h1 {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.gif" width="400">
+<img src="notes/7.png" width="400">
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -670,7 +670,7 @@ img {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.gif" width="400">
+<img src="notes/app.png" width="400">
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -702,7 +702,7 @@ img {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.gif" width="400">
+<img src="notes/8.png" width="400">
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -763,7 +763,7 @@ The :is() CSS pseudo-class function takes a selector list as its argument, and s
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.gif" width="400">
+<img src="notes/9.png" width="400">
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -826,7 +826,7 @@ The :not() CSS pseudo-class represents elements that do not match a list of sele
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.gif" width="400">
+<img src="notes/10.png" width="400">
 
 | Technology    | Description     |
 | ------------- | --------------- |
