@@ -33,8 +33,6 @@
 | `Text editor` | Vs code         |
 | `Browser`     | Chrome, firefox |
 
----
-
 <br>
 
 ### 5. Google Chrome and Visual Studio Code<a id="5"></a>
@@ -46,8 +44,6 @@
 | `Library`     | -               |
 | `Text editor` | Vs code         |
 | `Browser`     | Chrome, firefox |
-
----
 
 <br>
 
@@ -364,6 +360,7 @@ In index.html
 
 ---
 
+- Download any image from internet and put it, in same folder
 - In index.html
 
 ```html
@@ -402,6 +399,7 @@ In index.html
 
 ---
 
+- In 06-multiples-images create images subfolder and place new image inside it
 - In index.html
 
 ```html
@@ -453,10 +451,11 @@ In index.html
   <body>
     <h3>green udemy logo</h3>
     <img src="./udemy.png" alt="udemy image" />
+
     <h2>red udemy logo</h2>
     <img src="./images/udemy-red.png" alt="red udemy image" />
-    <h1>youtube logo</h1>
 
+    <h1>lamp image</h1>
     <!-- How to render image from internet address(path) -->
     <img
       src="https://images.pexels.com/photos/18005100/pexels-photo-18005100/free-photo-of-an-interior-with-potted-plants-and-pictures-in-frames.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -508,6 +507,7 @@ In index.html
 
 ---
 
+- Download new image from internet and pace it, in images folder
 - In index.html
 
 ```html
@@ -567,6 +567,7 @@ In index.html
   <body>
     <h3>green udemy logo</h3>
     <img src="./udemy.png" alt="udemy image" />
+
     <h1>pexels laptop image</h1>
     <!-- just use pixresize on window and fill udemy 246x205 -->
     <img src="./images/laptop.jpeg" alt="laptop pexels image" />
@@ -718,6 +719,7 @@ In index.html
 
 ---
 
+- In 12-internal-links create about.html file or page
 - In about.html
 
 ```html
@@ -1219,6 +1221,7 @@ In index.html
           <li>css</li>
         </ol>
       </li>
+
       <li>sarah</li>
     </ul>
   </body>
@@ -1445,48 +1448,69 @@ In index.html
 
 ### 40. Install Prettier Code Formatter<a id="40"></a>
 
-> **_Business Objective: Layout_**
-
-<img src="notes/app.png" >
-
-| Technology    | Description     |
-| ------------- | --------------- |
-| `Language`    | html, css       |
-| `Framework`   | -               |
-| `Library`     | -               |
-| `Text editor` | Vs code         |
-| `Browser`     | Chrome, firefox |
-
----
-
-- In index.html
-
-```html
-
-```
+- Extension: prettier
 
 <br>
 
 ### 41. Keyboard Shortcuts<a id="41"></a>
 
-> **_Business Objective: Layout_**
-
-<img src="notes/app.png" >
-
-| Technology    | Description     |
-| ------------- | --------------- |
-| `Language`    | html, css       |
-| `Framework`   | -               |
-| `Library`     | -               |
-| `Text editor` | Vs code         |
-| `Browser`     | Chrome, firefox |
-
----
-
-- In index.html
-
 ```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Home</title>
+  </head>
+  <body>
+    <!-- 
+        SAVE TIME
+        ALT === OPTION
+        COMMAND === CTRL WINDOWS
+        
+        CTRL + Z === UNDO +C +V
 
+        HOLD ALT + CLICK === MULTIPLE CURSORS
+        CTRL + D === SELECT INSTANCE
+        
+        CTRL + L === SELECT LINE
+        ALT + LEFT/RIGHT === NAVIGATE
+        CTRL + LEFT/RIGHT === END/START LINE
+        CTRL + UP/DOWN === START/END DOCUMENT
+
+        SHIFT + ALT + DOWN === COPY LINE
+        ALT + UP/DOWN === MOVE LINE UP/DOWN
+
+       CTRL + / === TOOGLE LINE COMMENT
+       CTRL + K + CTRL + S === SHORTCUTS
+       CTRL + ENTER === START A NEW LINE
+     -->
+
+    <!-- <h3>hello world</h3>
+    <h3>hello world</h3>
+    <h3>hello world</h3>
+    <h3>hello world</h3>
+    <h2>hello people</h2>
+    <h3>hello world</h3>
+    <h3>hello world</h3> -->
+    <h3>hello world</h3>
+
+    <h3>hello world</h3>
+
+    <h3>hello world</h3>
+    <h3>hello world</h3>
+    <h3>hello world</h3>
+    <h3>hello world</h3>
+    <h3>hello world</h3>
+    <h3>hello world</h3>
+    <h3>hello world</h3>
+    <h3>hello world</h3>
+    <h3>hello world</h3>
+    <h3>hello world</h3>
+    <h3>hello world</h3>
+  </body>
+</html>
 ```
 
 <br>
