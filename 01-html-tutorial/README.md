@@ -613,7 +613,7 @@ In index.html
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.png" >
+<img src="notes/27.gif" >
 
 | Technology    | Description |
 | ------------- | ----------- |
@@ -654,7 +654,7 @@ In index.html
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.png" >
+<img src="notes/28.gif" >
 
 | Technology    | Description |
 | ------------- | ----------- |
@@ -724,7 +724,7 @@ In index.html
 
 > **_Business Objective: Layout_**
 
-<img src="notes/29.png" >
+<img src="notes/29.gif" >
 
 | Technology    | Description |
 | ------------- | ----------- |
@@ -828,7 +828,7 @@ In index.html
 
 > **_Business Objective: Layout_**
 
-<img src="notes/30.png" >
+<img src="notes/30.gif" >
 
 | Technology    | Description |
 | ------------- | ----------- |
