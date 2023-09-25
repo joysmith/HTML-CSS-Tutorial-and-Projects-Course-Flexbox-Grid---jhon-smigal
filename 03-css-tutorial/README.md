@@ -221,7 +221,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- hyperlink -->
+    <!-- 1️⃣ hyperlink -->
     <a href="index.html">home page</a>
     <h1>hello world</h1>
     <h1>hello world</h1>
