@@ -25,12 +25,13 @@
 
 ### 4. HTML Intro<a id="4"></a>
 
-| Technology    | Description |
-| ------------- | ----------- |
-| `Language`    | html, css   |
-| `Framework`   | -           |
-| `Library`     | -           |
-| `Text editor` | Vs code     |
+| Technology    | Description     |
+| ------------- | --------------- |
+| `Language`    | html, css       |
+| `Framework`   | -               |
+| `Library`     | -               |
+| `Text editor` | Vs code         |
+| `Browser`     | Chrome, firefox |
 
 ---
 
@@ -38,12 +39,13 @@
 
 ### 5. Google Chrome and Visual Studio Code<a id="5"></a>
 
-| Technology    | Description |
-| ------------- | ----------- |
-| `Language`    | html, css   |
-| `Framework`   | -           |
-| `Library`     | -           |
-| `Text editor` | Vs code     |
+| Technology    | Description     |
+| ------------- | --------------- |
+| `Language`    | html, css       |
+| `Framework`   | -               |
+| `Library`     | -               |
+| `Text editor` | Vs code         |
+| `Browser`     | Chrome, firefox |
 
 ---
 
@@ -71,12 +73,13 @@
 
 <img src="notes/09.png" >
 
-| Technology    | Description |
-| ------------- | ----------- |
-| `Language`    | html, css   |
-| `Framework`   | -           |
-| `Library`     | -           |
-| `Text editor` | Vs code     |
+| Technology    | Description     |
+| ------------- | --------------- |
+| `Language`    | html, css       |
+| `Framework`   | -               |
+| `Library`     | -               |
+| `Text editor` | Vs code         |
+| `Browser`     | Chrome, firefox |
 
 ---
 
@@ -88,12 +91,13 @@
 
 <img src="notes/10.png" >
 
-| Technology    | Description |
-| ------------- | ----------- |
-| `Language`    | html, css   |
-| `Framework`   | -           |
-| `Library`     | -           |
-| `Text editor` | Vs code     |
+| Technology    | Description     |
+| ------------- | --------------- |
+| `Language`    | html, css       |
+| `Framework`   | -               |
+| `Library`     | -               |
+| `Text editor` | Vs code         |
+| `Browser`     | Chrome, firefox |
 
 ---
 
@@ -105,12 +109,13 @@
 
 <img src="notes/11.png" >
 
-| Technology    | Description |
-| ------------- | ----------- |
-| `Language`    | html, css   |
-| `Framework`   | -           |
-| `Library`     | -           |
-| `Text editor` | Vs code     |
+| Technology    | Description     |
+| ------------- | --------------- |
+| `Language`    | html, css       |
+| `Framework`   | -               |
+| `Library`     | -               |
+| `Text editor` | Vs code         |
+| `Browser`     | Chrome, firefox |
 
 ---
 
@@ -122,12 +127,13 @@
 
 <img src="notes/app.png" >
 
-| Technology    | Description |
-| ------------- | ----------- |
-| `Language`    | html, css   |
-| `Framework`   | -           |
-| `Library`     | -           |
-| `Text editor` | Vs code     |
+| Technology    | Description     |
+| ------------- | --------------- |
+| `Language`    | html, css       |
+| `Framework`   | -               |
+| `Library`     | -               |
+| `Text editor` | Vs code         |
+| `Browser`     | Chrome, firefox |
 
 ---
 
@@ -149,12 +155,13 @@
 
 <img src="notes/15 heading.png" >
 
-| Technology    | Description |
-| ------------- | ----------- |
-| `Language`    | html, css   |
-| `Framework`   | -           |
-| `Library`     | -           |
-| `Text editor` | Vs code     |
+| Technology    | Description     |
+| ------------- | --------------- |
+| `Language`    | html, css       |
+| `Framework`   | -               |
+| `Library`     | -               |
+| `Text editor` | Vs code         |
+| `Browser`     | Chrome, firefox |
 
 ---
 
@@ -195,12 +202,13 @@ In index.html
 
 <img src="notes/17 paragraph.png" >
 
-| Technology    | Description |
-| ------------- | ----------- |
-| `Language`    | html, css   |
-| `Framework`   | -           |
-| `Library`     | -           |
-| `Text editor` | Vs code     |
+| Technology    | Description     |
+| ------------- | --------------- |
+| `Language`    | html, css       |
+| `Framework`   | -               |
+| `Library`     | -               |
+| `Text editor` | Vs code         |
+| `Browser`     | Chrome, firefox |
 
 ---
 
@@ -235,12 +243,13 @@ In index.html
 
 <img src="notes/17 paragraph.png" >
 
-| Technology    | Description |
-| ------------- | ----------- |
-| `Language`    | html, css   |
-| `Framework`   | -           |
-| `Library`     | -           |
-| `Text editor` | Vs code     |
+| Technology    | Description     |
+| ------------- | --------------- |
+| `Language`    | html, css       |
+| `Framework`   | -               |
+| `Library`     | -               |
+| `Text editor` | Vs code         |
+| `Browser`     | Chrome, firefox |
 
 ---
 
@@ -254,12 +263,13 @@ In index.html
 
 <img src="notes/19 lorem.png" >
 
-| Technology    | Description |
-| ------------- | ----------- |
-| `Language`    | html, css   |
-| `Framework`   | -           |
-| `Library`     | -           |
-| `Text editor` | Vs code     |
+| Technology    | Description     |
+| ------------- | --------------- |
+| `Language`    | html, css       |
+| `Framework`   | -               |
+| `Library`     | -               |
+| `Text editor` | Vs code         |
+| `Browser`     | Chrome, firefox |
 
 ---
 
@@ -344,12 +354,13 @@ In index.html
 
 <img src="notes/20 imagebasic.png" >
 
-| Technology    | Description |
-| ------------- | ----------- |
-| `Language`    | html, css   |
-| `Framework`   | -           |
-| `Library`     | -           |
-| `Text editor` | Vs code     |
+| Technology    | Description     |
+| ------------- | --------------- |
+| `Language`    | html, css       |
+| `Framework`   | -               |
+| `Library`     | -               |
+| `Text editor` | Vs code         |
+| `Browser`     | Chrome, firefox |
 
 ---
 
@@ -381,12 +392,13 @@ In index.html
 
 <img src="notes/21multipleimages.png" >
 
-| Technology    | Description |
-| ------------- | ----------- |
-| `Language`    | html, css   |
-| `Framework`   | -           |
-| `Library`     | -           |
-| `Text editor` | Vs code     |
+| Technology    | Description     |
+| ------------- | --------------- |
+| `Language`    | html, css       |
+| `Framework`   | -               |
+| `Library`     | -               |
+| `Text editor` | Vs code         |
+| `Browser`     | Chrome, firefox |
 
 ---
 
@@ -417,12 +429,13 @@ In index.html
 
 <img src="notes/22 externalimages.png" >
 
-| Technology    | Description |
-| ------------- | ----------- |
-| `Language`    | html, css   |
-| `Framework`   | -           |
-| `Library`     | -           |
-| `Text editor` | Vs code     |
+| Technology    | Description     |
+| ------------- | --------------- |
+| `Language`    | html, css       |
+| `Framework`   | -               |
+| `Library`     | -               |
+| `Text editor` | Vs code         |
+| `Browser`     | Chrome, firefox |
 
 ---
 
@@ -461,12 +474,13 @@ In index.html
 
 <img src="notes/23.png" >
 
-| Technology    | Description |
-| ------------- | ----------- |
-| `Language`    | html, css   |
-| `Framework`   | -           |
-| `Library`     | -           |
-| `Text editor` | Vs code     |
+| Technology    | Description     |
+| ------------- | --------------- |
+| `Language`    | html, css       |
+| `Framework`   | -               |
+| `Library`     | -               |
+| `Text editor` | Vs code         |
+| `Browser`     | Chrome, firefox |
 
 ---
 
@@ -484,12 +498,13 @@ In index.html
 
 <img src="notes/24 widthheight.png" >
 
-| Technology    | Description |
-| ------------- | ----------- |
-| `Language`    | html, css   |
-| `Framework`   | -           |
-| `Library`     | -           |
-| `Text editor` | Vs code     |
+| Technology    | Description     |
+| ------------- | --------------- |
+| `Language`    | html, css       |
+| `Framework`   | -               |
+| `Library`     | -               |
+| `Text editor` | Vs code         |
+| `Browser`     | Chrome, firefox |
 
 ---
 
@@ -528,12 +543,13 @@ In index.html
 
 <img src="notes/25 cropimages.png" >
 
-| Technology    | Description |
-| ------------- | ----------- |
-| `Language`    | html, css   |
-| `Framework`   | -           |
-| `Library`     | -           |
-| `Text editor` | Vs code     |
+| Technology    | Description     |
+| ------------- | --------------- |
+| `Language`    | html, css       |
+| `Framework`   | -               |
+| `Library`     | -               |
+| `Text editor` | Vs code         |
+| `Browser`     | Chrome, firefox |
 
 ---
 
@@ -566,12 +582,13 @@ In index.html
 
 <img src="notes/26 commentsandlinebreak.png" >
 
-| Technology    | Description |
-| ------------- | ----------- |
-| `Language`    | html, css   |
-| `Framework`   | -           |
-| `Library`     | -           |
-| `Text editor` | Vs code     |
+| Technology    | Description     |
+| ------------- | --------------- |
+| `Language`    | html, css       |
+| `Framework`   | -               |
+| `Library`     | -               |
+| `Text editor` | Vs code         |
+| `Browser`     | Chrome, firefox |
 
 ---
 
@@ -615,12 +632,13 @@ In index.html
 
 <img src="notes/27.gif" >
 
-| Technology    | Description |
-| ------------- | ----------- |
-| `Language`    | html, css   |
-| `Framework`   | -           |
-| `Library`     | -           |
-| `Text editor` | Vs code     |
+| Technology    | Description     |
+| ------------- | --------------- |
+| `Language`    | html, css       |
+| `Framework`   | -               |
+| `Library`     | -               |
+| `Text editor` | Vs code         |
+| `Browser`     | Chrome, firefox |
 
 ---
 
@@ -656,12 +674,13 @@ In index.html
 
 <img src="notes/28.gif" >
 
-| Technology    | Description |
-| ------------- | ----------- |
-| `Language`    | html, css   |
-| `Framework`   | -           |
-| `Library`     | -           |
-| `Text editor` | Vs code     |
+| Technology    | Description     |
+| ------------- | --------------- |
+| `Language`    | html, css       |
+| `Framework`   | -               |
+| `Library`     | -               |
+| `Text editor` | Vs code         |
+| `Browser`     | Chrome, firefox |
 
 ---
 
@@ -726,12 +745,13 @@ In index.html
 
 <img src="notes/29.gif" >
 
-| Technology    | Description |
-| ------------- | ----------- |
-| `Language`    | html, css   |
-| `Framework`   | -           |
-| `Library`     | -           |
-| `Text editor` | Vs code     |
+| Technology    | Description     |
+| ------------- | --------------- |
+| `Language`    | html, css       |
+| `Framework`   | -               |
+| `Library`     | -               |
+| `Text editor` | Vs code         |
+| `Browser`     | Chrome, firefox |
 
 ---
 
@@ -830,12 +850,13 @@ In index.html
 
 <img src="notes/30.gif" >
 
-| Technology    | Description |
-| ------------- | ----------- |
-| `Language`    | html, css   |
-| `Framework`   | -           |
-| `Library`     | -           |
-| `Text editor` | Vs code     |
+| Technology    | Description     |
+| ------------- | --------------- |
+| `Language`    | html, css       |
+| `Framework`   | -               |
+| `Library`     | -               |
+| `Text editor` | Vs code         |
+| `Browser`     | Chrome, firefox |
 
 ---
 
@@ -940,12 +961,13 @@ In index.html
 
 <img src="notes/31.png" >
 
-| Technology    | Description |
-| ------------- | ----------- |
-| `Language`    | html, css   |
-| `Framework`   | -           |
-| `Library`     | -           |
-| `Text editor` | Vs code     |
+| Technology    | Description     |
+| ------------- | --------------- |
+| `Language`    | html, css       |
+| `Framework`   | -               |
+| `Library`     | -               |
+| `Text editor` | Vs code         |
+| `Browser`     | Chrome, firefox |
 
 ---
 
@@ -975,12 +997,13 @@ In index.html
 
 <img src="notes/32.png" >
 
-| Technology    | Description |
-| ------------- | ----------- |
-| `Language`    | html, css   |
-| `Framework`   | -           |
-| `Library`     | -           |
-| `Text editor` | Vs code     |
+| Technology    | Description     |
+| ------------- | --------------- |
+| `Language`    | html, css       |
+| `Framework`   | -               |
+| `Library`     | -               |
+| `Text editor` | Vs code         |
+| `Browser`     | Chrome, firefox |
 
 ---
 
@@ -1015,12 +1038,13 @@ In index.html
 
 <img src="notes/33.png" >
 
-| Technology    | Description |
-| ------------- | ----------- |
-| `Language`    | html, css   |
-| `Framework`   | -           |
-| `Library`     | -           |
-| `Text editor` | Vs code     |
+| Technology    | Description     |
+| ------------- | --------------- |
+| `Language`    | html, css       |
+| `Framework`   | -               |
+| `Library`     | -               |
+| `Text editor` | Vs code         |
+| `Browser`     | Chrome, firefox |
 
 ---
 
@@ -1050,12 +1074,13 @@ In index.html
 
 <img src="notes/34.png" >
 
-| Technology    | Description |
-| ------------- | ----------- |
-| `Language`    | html, css   |
-| `Framework`   | -           |
-| `Library`     | -           |
-| `Text editor` | Vs code     |
+| Technology    | Description     |
+| ------------- | --------------- |
+| `Language`    | html, css       |
+| `Framework`   | -               |
+| `Library`     | -               |
+| `Text editor` | Vs code         |
+| `Browser`     | Chrome, firefox |
 
 ---
 
@@ -1120,12 +1145,13 @@ In index.html
 
 <img src="notes/35.png" >
 
-| Technology    | Description |
-| ------------- | ----------- |
-| `Language`    | html, css   |
-| `Framework`   | -           |
-| `Library`     | -           |
-| `Text editor` | Vs code     |
+| Technology    | Description     |
+| ------------- | --------------- |
+| `Language`    | html, css       |
+| `Framework`   | -               |
+| `Library`     | -               |
+| `Text editor` | Vs code         |
+| `Browser`     | Chrome, firefox |
 
 ---
 
@@ -1159,12 +1185,13 @@ In index.html
 
 <img src="notes/36.png" >
 
-| Technology    | Description |
-| ------------- | ----------- |
-| `Language`    | html, css   |
-| `Framework`   | -           |
-| `Library`     | -           |
-| `Text editor` | Vs code     |
+| Technology    | Description     |
+| ------------- | --------------- |
+| `Language`    | html, css       |
+| `Framework`   | -               |
+| `Library`     | -               |
+| `Text editor` | Vs code         |
+| `Browser`     | Chrome, firefox |
 
 ---
 
@@ -1206,12 +1233,13 @@ In index.html
 
 <img src="notes/37.png" >
 
-| Technology    | Description |
-| ------------- | ----------- |
-| `Language`    | html, css   |
-| `Framework`   | -           |
-| `Library`     | -           |
-| `Text editor` | Vs code     |
+| Technology    | Description     |
+| ------------- | --------------- |
+| `Language`    | html, css       |
+| `Framework`   | -               |
+| `Library`     | -               |
+| `Text editor` | Vs code         |
+| `Browser`     | Chrome, firefox |
 
 ---
 
@@ -1255,12 +1283,13 @@ In index.html
 
 <img src="notes/38.png" >
 
-| Technology    | Description |
-| ------------- | ----------- |
-| `Language`    | html, css   |
-| `Framework`   | -           |
-| `Library`     | -           |
-| `Text editor` | Vs code     |
+| Technology    | Description     |
+| ------------- | --------------- |
+| `Language`    | html, css       |
+| `Framework`   | -               |
+| `Library`     | -               |
+| `Text editor` | Vs code         |
+| `Browser`     | Chrome, firefox |
 
 ---
 
@@ -1309,12 +1338,13 @@ In index.html
 
 <img src="notes/39.png" >
 
-| Technology    | Description |
-| ------------- | ----------- |
-| `Language`    | html, css   |
-| `Framework`   | -           |
-| `Library`     | -           |
-| `Text editor` | Vs code     |
+| Technology    | Description     |
+| ------------- | --------------- |
+| `Language`    | html, css       |
+| `Framework`   | -               |
+| `Library`     | -               |
+| `Text editor` | Vs code         |
+| `Browser`     | Chrome, firefox |
 
 ---
 
@@ -1419,12 +1449,13 @@ In index.html
 
 <img src="notes/app.png" >
 
-| Technology    | Description |
-| ------------- | ----------- |
-| `Language`    | html, css   |
-| `Framework`   | -           |
-| `Library`     | -           |
-| `Text editor` | Vs code     |
+| Technology    | Description     |
+| ------------- | --------------- |
+| `Language`    | html, css       |
+| `Framework`   | -               |
+| `Library`     | -               |
+| `Text editor` | Vs code         |
+| `Browser`     | Chrome, firefox |
 
 ---
 
@@ -1442,12 +1473,13 @@ In index.html
 
 <img src="notes/app.png" >
 
-| Technology    | Description |
-| ------------- | ----------- |
-| `Language`    | html, css   |
-| `Framework`   | -           |
-| `Library`     | -           |
-| `Text editor` | Vs code     |
+| Technology    | Description     |
+| ------------- | --------------- |
+| `Language`    | html, css       |
+| `Framework`   | -               |
+| `Library`     | -               |
+| `Text editor` | Vs code         |
+| `Browser`     | Chrome, firefox |
 
 ---
 
@@ -1465,12 +1497,13 @@ In index.html
 
 <img src="notes/app.png" >
 
-| Technology    | Description |
-| ------------- | ----------- |
-| `Language`    | html, css   |
-| `Framework`   | -           |
-| `Library`     | -           |
-| `Text editor` | Vs code     |
+| Technology    | Description     |
+| ------------- | --------------- |
+| `Language`    | html, css       |
+| `Framework`   | -               |
+| `Library`     | -               |
+| `Text editor` | Vs code         |
+| `Browser`     | Chrome, firefox |
 
 ---
 
