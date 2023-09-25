@@ -32,7 +32,7 @@
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.gif" width="400">
+<img src="notes/app.gif" >
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -64,7 +64,7 @@
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.gif" width="400">
+<img src="notes/1.png" >
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -134,7 +134,7 @@ p {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.gif" width="400">
+<img src="notes/2.png" >
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -216,7 +216,7 @@ h1 {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.gif" width="400">
+<img src="notes/3.png" >
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -294,7 +294,7 @@ div {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.gif" width="400">
+<img src="notes/4.png" >
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -381,7 +381,7 @@ div {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.gif" width="400">
+<img src="notes/5.gif" >
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -470,7 +470,7 @@ div {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.gif" width="400">
+<img src="notes/6.gif" >
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -568,7 +568,7 @@ div {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.gif" width="400">
+<img src="notes/7.gif" >
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -666,7 +666,7 @@ div {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.gif" width="400">
+<img src="notes/8.gif" >
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -756,7 +756,7 @@ h1 {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.gif" width="400">
+<img src="notes/9.gif" >
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -838,7 +838,7 @@ img {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.gif" width="400">
+<img src="notes/10.png" >
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -907,7 +907,7 @@ p::after {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.gif" width="400">
+<img src="notes/11.gif" >
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -998,7 +998,7 @@ div:hover::before {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.gif" width="400">
+<img src="notes/12.png" >
 
 | Technology    | Description     |
 | ------------- | --------------- |

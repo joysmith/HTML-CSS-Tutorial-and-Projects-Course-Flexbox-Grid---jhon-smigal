@@ -24,7 +24,7 @@
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.gif" width="400">
+<img src="notes/app.png" >
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -40,7 +40,7 @@
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.gif" width="400">
+<img src="notes/1.png" >
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -96,7 +96,7 @@ h1 {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.gif" width="400">
+<img src="notes/2.png" >
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -155,7 +155,7 @@ h1 {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.gif" width="400">
+<img src="notes/3.png" >
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -220,7 +220,7 @@ div {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.gif" width="400">
+<img src="notes/4.png" >
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -289,7 +289,7 @@ div {
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.gif" width="400">
+<img src="notes/5.png" >
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -358,7 +358,7 @@ vw(view width) - width - percent of the device-screen
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.gif" width="400">
+<img src="notes/.png" >
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -390,7 +390,7 @@ vw(view width) - width - percent of the device-screen
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.gif" width="400">
+<img src="notes/6.png" >
 
 | Technology    | Description     |
 | ------------- | --------------- |
@@ -456,7 +456,7 @@ MIX AND MATCH VALUES
 
 > **_Business Objective: Layout_**
 
-<img src="notes/app.gif" width="400">
+<img src="notes/7.png" >
 
 | Technology    | Description     |
 | ------------- | --------------- |
