@@ -36,7 +36,7 @@
 
 | Technology    | Description     |
 | ------------- | --------------- |
-| `Language`    | html, css, js   |
+| `Language`    | html, css       |
 | `Framework`   | -               |
 | `Library`     | -               |
 | `Text editor` | Vs code         |
@@ -68,7 +68,7 @@
 
 | Technology    | Description     |
 | ------------- | --------------- |
-| `Language`    | html, css, js   |
+| `Language`    | html, css       |
 | `Framework`   | -               |
 | `Library`     | -               |
 | `Text editor` | Vs code         |
@@ -138,7 +138,7 @@ p {
 
 | Technology    | Description     |
 | ------------- | --------------- |
-| `Language`    | html, css, js   |
+| `Language`    | html, css       |
 | `Framework`   | -               |
 | `Library`     | -               |
 | `Text editor` | Vs code         |
@@ -220,7 +220,7 @@ h1 {
 
 | Technology    | Description     |
 | ------------- | --------------- |
-| `Language`    | html, css, js   |
+| `Language`    | html, css       |
 | `Framework`   | -               |
 | `Library`     | -               |
 | `Text editor` | Vs code         |
@@ -298,7 +298,7 @@ div {
 
 | Technology    | Description     |
 | ------------- | --------------- |
-| `Language`    | html, css, js   |
+| `Language`    | html, css       |
 | `Framework`   | -               |
 | `Library`     | -               |
 | `Text editor` | Vs code         |
@@ -385,7 +385,7 @@ div {
 
 | Technology    | Description     |
 | ------------- | --------------- |
-| `Language`    | html, css, js   |
+| `Language`    | html, css       |
 | `Framework`   | -               |
 | `Library`     | -               |
 | `Text editor` | Vs code         |
@@ -474,7 +474,7 @@ div {
 
 | Technology    | Description     |
 | ------------- | --------------- |
-| `Language`    | html, css, js   |
+| `Language`    | html, css       |
 | `Framework`   | -               |
 | `Library`     | -               |
 | `Text editor` | Vs code         |
@@ -572,7 +572,7 @@ div {
 
 | Technology    | Description     |
 | ------------- | --------------- |
-| `Language`    | html, css, js   |
+| `Language`    | html, css       |
 | `Framework`   | -               |
 | `Library`     | -               |
 | `Text editor` | Vs code         |
@@ -670,7 +670,7 @@ div {
 
 | Technology    | Description     |
 | ------------- | --------------- |
-| `Language`    | html, css, js   |
+| `Language`    | html, css       |
 | `Framework`   | -               |
 | `Library`     | -               |
 | `Text editor` | Vs code         |
@@ -760,7 +760,7 @@ h1 {
 
 | Technology    | Description     |
 | ------------- | --------------- |
-| `Language`    | html, css, js   |
+| `Language`    | html, css       |
 | `Framework`   | -               |
 | `Library`     | -               |
 | `Text editor` | Vs code         |
@@ -842,7 +842,7 @@ img {
 
 | Technology    | Description     |
 | ------------- | --------------- |
-| `Language`    | html, css, js   |
+| `Language`    | html, css       |
 | `Framework`   | -               |
 | `Library`     | -               |
 | `Text editor` | Vs code         |
@@ -911,7 +911,7 @@ p::after {
 
 | Technology    | Description     |
 | ------------- | --------------- |
-| `Language`    | html, css, js   |
+| `Language`    | html, css       |
 | `Framework`   | -               |
 | `Library`     | -               |
 | `Text editor` | Vs code         |
@@ -934,7 +934,9 @@ p::after {
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <!-- 1️⃣ -->
     <div>
+      <!-- 2️⃣ -->
       <img src="./big.jpeg" alt="" />
     </div>
   </body>
@@ -951,15 +953,22 @@ p::after {
 content:'' - required
 img --- does not work
 */
+
+/* 4️⃣ parent, put it in center */
 div {
   width: 70vw;
+  /* top&bottom margin 100px, left&right margine auto */
   margin: 100px auto;
   position: relative;
 }
+
+/* 3️⃣ children */
 img {
   width: 100%;
   display: block;
 }
+
+/* 5️⃣ */
 div::before {
   content: "";
   border: 2px solid grey;
@@ -972,6 +981,8 @@ div::before {
   z-index: -2;
   transition: all 0.5s linear;
 }
+
+/* 5️⃣ */
 div::after {
   content: "";
   background: rgba(128, 128, 128, 0.5);
@@ -985,6 +996,7 @@ div::after {
   z-index: -1;
   transition: all 0.5s linear;
 }
+
 div:hover::after,
 div:hover::before {
   top: 0;
@@ -1002,7 +1014,7 @@ div:hover::before {
 
 | Technology    | Description     |
 | ------------- | --------------- |
-| `Language`    | html, css, js   |
+| `Language`    | html, css       |
 | `Framework`   | -               |
 | `Library`     | -               |
 | `Text editor` | Vs code         |
