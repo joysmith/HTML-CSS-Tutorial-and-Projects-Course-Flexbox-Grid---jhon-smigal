@@ -997,6 +997,8 @@ div::after {
   transition: all 0.5s linear;
 }
 
+/* 6️⃣  as i'm hovering over the div what will happen to pseudo after
+  as i'm hovering over the div what will happen to pseudo before */
 div:hover::after,
 div:hover::before {
   top: 0;
