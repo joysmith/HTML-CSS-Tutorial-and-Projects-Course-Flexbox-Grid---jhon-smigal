@@ -433,25 +433,22 @@ div {
 
 ```css
 /* 
-position:static - default, always positioned according to the normal flow,
-position:relative - position relative to it's normal position.
-top⬇️, bottom⬆️, left➡️, right⬅️ from container
+position:absolute - relative to the closest parent with position:relative.
+postion:fixed - relative to viewport(screen),stays as we are scrolling 
+will use other content to fill out the space
 */
 div {
   border: 3px solid red;
   background: yellow;
   margin-top: 40px;
+  /* position: relative; */
 }
 .one {
   background: blue;
   color: white;
-
-  /* How to set relative position */
-  position: relative;
-  /* top: 200px; */
-  bottom: 2rem;
-  /* left: 20%; */
-  right: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .two {
   background: green;
@@ -461,6 +458,13 @@ div {
   background: pink;
   font-size: 20px;
   color: #222;
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+}
+.container {
+  min-height: 100vh;
+  background: blue;
 }
 ```
 
